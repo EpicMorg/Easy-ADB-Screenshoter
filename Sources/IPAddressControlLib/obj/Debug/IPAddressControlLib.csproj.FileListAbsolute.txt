@@ -1,0 +1,9 @@
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\bin\Debug\IPAddressControlLib.dll
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\bin\Debug\IPAddressControlLib.pdb
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\bin\Debug\IPAddressControlLib.dll.CodeAnalysisLog.xml
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\bin\Debug\IPAddressControlLib.dll.lastcodeanalysissucceeded
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\obj\Debug\IPAddressControlLib.csprojResolveAssemblyReference.cache
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\obj\Debug\IPAddressControlLib.Properties.Resources.resources
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\obj\Debug\IPAddressControlLib.csproj.GenerateResource.Cache
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\obj\Debug\IPAddressControlLib.dll
+E:\WORK\BTSync\bt_work\Screenshoter\IPAddressControlLib\obj\Debug\IPAddressControlLib.pdb
