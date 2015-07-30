@@ -56,8 +56,7 @@
             // 
             // GbAdb
             // 
-            this.GbAdb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.GbAdb, "GbAdb");
             this.GbAdb.Controls.Add(this.TxtScreenFilename);
             this.GbAdb.Controls.Add(this.TxtScreenPath);
             this.GbAdb.Controls.Add(this.LblScreenFilename);
@@ -65,227 +64,145 @@
             this.GbAdb.Controls.Add(this.BtnAdbPath);
             this.GbAdb.Controls.Add(this.TxtAdbPath);
             this.GbAdb.Controls.Add(this.ChkAdb);
-            this.GbAdb.Location = new System.Drawing.Point(12, 12);
             this.GbAdb.Name = "GbAdb";
-            this.GbAdb.Size = new System.Drawing.Size(460, 134);
-            this.GbAdb.TabIndex = 0;
             this.GbAdb.TabStop = false;
             // 
             // TxtScreenFilename
             // 
-            this.TxtScreenFilename.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtScreenFilename.Location = new System.Drawing.Point(6, 101);
+            resources.ApplyResources(this.TxtScreenFilename, "TxtScreenFilename");
             this.TxtScreenFilename.Name = "TxtScreenFilename";
-            this.TxtScreenFilename.Size = new System.Drawing.Size(448, 20);
-            this.TxtScreenFilename.TabIndex = 4;
-            this.TxtScreenFilename.Text = "screenshot";
             // 
             // TxtScreenPath
             // 
-            this.TxtScreenPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtScreenPath.Location = new System.Drawing.Point(6, 62);
+            resources.ApplyResources(this.TxtScreenPath, "TxtScreenPath");
             this.TxtScreenPath.Name = "TxtScreenPath";
-            this.TxtScreenPath.Size = new System.Drawing.Size(448, 20);
-            this.TxtScreenPath.TabIndex = 4;
-            this.TxtScreenPath.Text = "/sdcard/";
             // 
             // LblScreenFilename
             // 
-            this.LblScreenFilename.AutoSize = true;
-            this.LblScreenFilename.Location = new System.Drawing.Point(6, 85);
+            resources.ApplyResources(this.LblScreenFilename, "LblScreenFilename");
             this.LblScreenFilename.Name = "LblScreenFilename";
-            this.LblScreenFilename.Size = new System.Drawing.Size(254, 13);
-            this.LblScreenFilename.TabIndex = 3;
-            this.LblScreenFilename.Text = "File name (.png extension will be added automaticly):";
             // 
             // LblScreenPath
             // 
-            this.LblScreenPath.AutoSize = true;
-            this.LblScreenPath.Location = new System.Drawing.Point(6, 46);
+            resources.ApplyResources(this.LblScreenPath, "LblScreenPath");
             this.LblScreenPath.Name = "LblScreenPath";
-            this.LblScreenPath.Size = new System.Drawing.Size(138, 13);
-            this.LblScreenPath.TabIndex = 3;
-            this.LblScreenPath.Text = "Screenshot path on device:";
             // 
             // BtnAdbPath
             // 
-            this.BtnAdbPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnAdbPath.Location = new System.Drawing.Point(379, 21);
+            resources.ApplyResources(this.BtnAdbPath, "BtnAdbPath");
             this.BtnAdbPath.Name = "BtnAdbPath";
-            this.BtnAdbPath.Size = new System.Drawing.Size(75, 23);
-            this.BtnAdbPath.TabIndex = 2;
-            this.BtnAdbPath.Text = "Browse";
             this.BtnAdbPath.UseVisualStyleBackColor = true;
             this.BtnAdbPath.Click += new System.EventHandler(this.BtnAdbPath_Click);
             // 
             // TxtAdbPath
             // 
-            this.TxtAdbPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtAdbPath.Location = new System.Drawing.Point(6, 23);
+            resources.ApplyResources(this.TxtAdbPath, "TxtAdbPath");
             this.TxtAdbPath.Name = "TxtAdbPath";
             this.TxtAdbPath.ReadOnly = true;
-            this.TxtAdbPath.Size = new System.Drawing.Size(367, 20);
-            this.TxtAdbPath.TabIndex = 1;
-            this.TxtAdbPath.Text = "adb.exe";
             // 
             // ChkAdb
             // 
-            this.ChkAdb.AutoSize = true;
-            this.ChkAdb.ForeColor = System.Drawing.Color.DarkRed;
-            this.ChkAdb.Location = new System.Drawing.Point(6, 0);
+            resources.ApplyResources(this.ChkAdb, "ChkAdb");
+            this.ChkAdb.ForeColor = System.Drawing.Color.Black;
             this.ChkAdb.Name = "ChkAdb";
-            this.ChkAdb.Size = new System.Drawing.Size(96, 17);
-            this.ChkAdb.TabIndex = 0;
-            this.ChkAdb.Text = "Adb not found!";
             this.ChkAdb.UseVisualStyleBackColor = true;
+            this.ChkAdb.CheckedChanged += new System.EventHandler(this.ChkAdb_CheckedChanged);
             // 
             // IpCustomDeviceIp
             // 
+            resources.ApplyResources(this.IpCustomDeviceIp, "IpCustomDeviceIp");
             this.IpCustomDeviceIp.AllowInternalTab = false;
-            this.IpCustomDeviceIp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.IpCustomDeviceIp.AutoHeight = true;
             this.IpCustomDeviceIp.BackColor = System.Drawing.SystemColors.Window;
             this.IpCustomDeviceIp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.IpCustomDeviceIp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.IpCustomDeviceIp.Enabled = false;
-            this.IpCustomDeviceIp.Location = new System.Drawing.Point(6, 23);
-            this.IpCustomDeviceIp.MinimumSize = new System.Drawing.Size(87, 20);
             this.IpCustomDeviceIp.Name = "IpCustomDeviceIp";
             this.IpCustomDeviceIp.ReadOnly = false;
-            this.IpCustomDeviceIp.Size = new System.Drawing.Size(296, 20);
-            this.IpCustomDeviceIp.TabIndex = 1;
-            this.IpCustomDeviceIp.Text = "...";
             // 
             // GbCustomDevice
             // 
-            this.GbCustomDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.GbCustomDevice, "GbCustomDevice");
             this.GbCustomDevice.Controls.Add(this.BtnCustomDeviceSelect);
             this.GbCustomDevice.Controls.Add(this.IpCustomDeviceIp);
             this.GbCustomDevice.Controls.Add(this.TxtCustomDevicePort);
-            this.GbCustomDevice.Location = new System.Drawing.Point(12, 153);
             this.GbCustomDevice.Name = "GbCustomDevice";
-            this.GbCustomDevice.Size = new System.Drawing.Size(460, 58);
-            this.GbCustomDevice.TabIndex = 2;
             this.GbCustomDevice.TabStop = false;
             // 
             // BtnCustomDeviceSelect
             // 
-            this.BtnCustomDeviceSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnCustomDeviceSelect.Location = new System.Drawing.Point(379, 21);
+            resources.ApplyResources(this.BtnCustomDeviceSelect, "BtnCustomDeviceSelect");
             this.BtnCustomDeviceSelect.Name = "BtnCustomDeviceSelect";
-            this.BtnCustomDeviceSelect.Size = new System.Drawing.Size(75, 23);
-            this.BtnCustomDeviceSelect.TabIndex = 2;
-            this.BtnCustomDeviceSelect.Text = "Devices";
             this.BtnCustomDeviceSelect.UseVisualStyleBackColor = true;
             this.BtnCustomDeviceSelect.Click += new System.EventHandler(this.BtnCustomDeviceSelect_Click);
             // 
             // TxtCustomDevicePort
             // 
-            this.TxtCustomDevicePort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtCustomDevicePort.Enabled = false;
-            this.TxtCustomDevicePort.Location = new System.Drawing.Point(308, 23);
+            resources.ApplyResources(this.TxtCustomDevicePort, "TxtCustomDevicePort");
             this.TxtCustomDevicePort.Name = "TxtCustomDevicePort";
-            this.TxtCustomDevicePort.Size = new System.Drawing.Size(65, 20);
-            this.TxtCustomDevicePort.TabIndex = 1;
             // 
             // ChkCustomDevice
             // 
-            this.ChkCustomDevice.AutoSize = true;
-            this.ChkCustomDevice.Location = new System.Drawing.Point(18, 152);
+            resources.ApplyResources(this.ChkCustomDevice, "ChkCustomDevice");
             this.ChkCustomDevice.Name = "ChkCustomDevice";
-            this.ChkCustomDevice.Size = new System.Drawing.Size(164, 17);
-            this.ChkCustomDevice.TabIndex = 0;
-            this.ChkCustomDevice.Text = "Select custom device (via IP)";
             this.ChkCustomDevice.UseVisualStyleBackColor = true;
             this.ChkCustomDevice.CheckedChanged += new System.EventHandler(this.ChkCustomDevice_CheckedChanged);
             // 
             // ChkCustomPath
             // 
-            this.ChkCustomPath.AutoSize = true;
-            this.ChkCustomPath.Location = new System.Drawing.Point(18, 216);
+            resources.ApplyResources(this.ChkCustomPath, "ChkCustomPath");
             this.ChkCustomPath.Name = "ChkCustomPath";
-            this.ChkCustomPath.Size = new System.Drawing.Size(166, 17);
-            this.ChkCustomPath.TabIndex = 3;
-            this.ChkCustomPath.Text = "Save screenshos at this path:";
             this.ChkCustomPath.UseVisualStyleBackColor = true;
             this.ChkCustomPath.CheckedChanged += new System.EventHandler(this.ChkCustomPath_CheckedChanged);
             // 
             // GbCustomPath
             // 
-            this.GbCustomPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.GbCustomPath, "GbCustomPath");
             this.GbCustomPath.Controls.Add(this.BtnCustomPath);
             this.GbCustomPath.Controls.Add(this.TxtCustomPath);
-            this.GbCustomPath.Enabled = false;
-            this.GbCustomPath.Location = new System.Drawing.Point(12, 217);
             this.GbCustomPath.Name = "GbCustomPath";
-            this.GbCustomPath.Size = new System.Drawing.Size(460, 58);
-            this.GbCustomPath.TabIndex = 4;
             this.GbCustomPath.TabStop = false;
             // 
             // BtnCustomPath
             // 
-            this.BtnCustomPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnCustomPath.Location = new System.Drawing.Point(379, 21);
+            resources.ApplyResources(this.BtnCustomPath, "BtnCustomPath");
             this.BtnCustomPath.Name = "BtnCustomPath";
-            this.BtnCustomPath.Size = new System.Drawing.Size(75, 23);
-            this.BtnCustomPath.TabIndex = 2;
-            this.BtnCustomPath.Text = "Browse";
             this.BtnCustomPath.UseVisualStyleBackColor = true;
             this.BtnCustomPath.Click += new System.EventHandler(this.BtnCustomPath_Click);
             // 
             // TxtCustomPath
             // 
-            this.TxtCustomPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtCustomPath.Location = new System.Drawing.Point(6, 23);
+            resources.ApplyResources(this.TxtCustomPath, "TxtCustomPath");
             this.TxtCustomPath.Name = "TxtCustomPath";
             this.TxtCustomPath.ReadOnly = true;
-            this.TxtCustomPath.Size = new System.Drawing.Size(367, 20);
-            this.TxtCustomPath.TabIndex = 1;
             // 
             // notifyIcon
             // 
-            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "notifyIcon1";
-            this.notifyIcon.Visible = true;
+            resources.ApplyResources(this.notifyIcon, "notifyIcon");
             this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseClick);
             // 
             // BtnTakeMeToChurch
             // 
-            this.BtnTakeMeToChurch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.BtnTakeMeToChurch, "BtnTakeMeToChurch");
             this.BtnTakeMeToChurch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnTakeMeToChurch.Image = global::Screenshoter.Properties.Resources.photo;
-            this.BtnTakeMeToChurch.Location = new System.Drawing.Point(320, 281);
             this.BtnTakeMeToChurch.Name = "BtnTakeMeToChurch";
-            this.BtnTakeMeToChurch.Size = new System.Drawing.Size(152, 112);
-            this.BtnTakeMeToChurch.TabIndex = 5;
             this.BtnTakeMeToChurch.UseVisualStyleBackColor = true;
             this.BtnTakeMeToChurch.Click += new System.EventHandler(this.BtnTakeMeToChurch_Click);
             // 
             // FrmMain
             // 
             this.AcceptButton = this.BtnTakeMeToChurch;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 405);
             this.Controls.Add(this.BtnTakeMeToChurch);
             this.Controls.Add(this.ChkCustomPath);
             this.Controls.Add(this.GbCustomPath);
             this.Controls.Add(this.ChkCustomDevice);
             this.Controls.Add(this.GbAdb);
             this.Controls.Add(this.GbCustomDevice);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(500, 350);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Android ADB Screenshoter";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.GbAdb.ResumeLayout(false);

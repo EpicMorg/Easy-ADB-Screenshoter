@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPAddressControlLib", "IPAd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Android ADB Screenshoter", "Screenshoter\Android ADB Screenshoter.csproj", "{FE5EC074-207B-4809-BC39-5A4AE7667AF3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3d party", "3d party", "{E7AD8F18-E2C6-4A9E-BE16-5979472F0CEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5ED2B33-5644-47C4-BC30-A4840F67FF87} = {E7AD8F18-E2C6-4A9E-BE16-5979472F0CEC}
 	EndGlobalSection
 EndGlobal

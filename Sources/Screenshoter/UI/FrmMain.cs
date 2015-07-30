@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Media;
 using System.Reflection;
 using System.Text; 
 using System.Windows.Forms;
+using Screenshoter.Locale;
 
 namespace Screenshoter.UI
 {
     public sealed partial class FrmMain : Form
     {
         private string _adbPath;
-        private FormWindowState _oldFormState;
-        private int _procId;
+        private FormWindowState _oldFormState; 
 
         public FrmMain()
         {
@@ -34,7 +35,7 @@ namespace Screenshoter.UI
             if (!File.Exists(TxtAdbPath.Text))
             {
                 ChkAdb.Checked = false;
-                ChkAdb.Text = @"Adb not found!";
+                ChkAdb.Text = Strings.AdbNotFound;
                 var openFileDialog = new OpenFileDialog
                 {
                     FileName = "adb.exe",
@@ -50,11 +51,11 @@ namespace Screenshoter.UI
                 {
                     TxtAdbPath.Text = openFileDialog.FileName;
                     ChkAdb.Checked = true;
-                    ChkAdb.Text = @"Adb founded!";
+                    ChkAdb.Text = Strings.AdbFound;
                     notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
                     notifyIcon.BalloonTipTitle = Text;
                     notifyIcon.BalloonTipText =
-                        @"Готово к работе.";
+                        Strings.PreparedToWork;
                     notifyIcon.ShowBalloonTip(30000);
                 }
                 else
@@ -66,11 +67,10 @@ namespace Screenshoter.UI
             {
                 TxtAdbPath.Text = Path.Combine(Application.StartupPath, "adb.exe");
                 ChkAdb.Checked = true;
-                ChkAdb.Text = @"Adb founded!";
+                ChkAdb.Text = Strings.AdbFound;
             }
         }
 
-        #endregion
 
         private void BtnCustomDeviceSelect_Click(object sender, EventArgs e)
         {
@@ -93,7 +93,7 @@ namespace Screenshoter.UI
             if (openFileDialog.ShowDialog() != DialogResult.OK) return;
             TxtAdbPath.Text = openFileDialog.FileName;
             ChkAdb.Checked = true;
-            ChkAdb.Text = @"Adb founded!";
+            ChkAdb.Text = Strings.AdbFound;
         }
 
         private void BtnTakeMeToChurch_Click(object sender, EventArgs e)
@@ -133,12 +133,14 @@ namespace Screenshoter.UI
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.ToString(), @"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show(ex.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
+                        BtnTakeMeToChurch.Enabled = true;
                     }
                 }
                 else
                 {
-                    MessageBox.Show(@"Enter IP and Port!", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Strings.ErrorIpPort, Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    BtnTakeMeToChurch.Enabled = true;
                     return;
                 }
             }
@@ -163,7 +165,8 @@ namespace Screenshoter.UI
             }
             catch (Exception ex1)
             {
-                MessageBox.Show(ex1.ToString(), @"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex1.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                BtnTakeMeToChurch.Enabled = true;
             }
             //adb pull / sdcard / screenshot_%random%.png
             //MessageBox.Show(_adbPath + " pull " + path + screenshot + "_" + addToName + ".png");
@@ -186,7 +189,8 @@ namespace Screenshoter.UI
             }
             catch (Exception ex2)
             {
-                MessageBox.Show(ex2.ToString(), @"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex2.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                BtnTakeMeToChurch.Enabled = true;
             }
             //adb shell rm / sdcard / screen_10_ % _rand %.png
             //MessageBox.Show(_adbPath + " shell rm " + path + screenshot + "_" + addToName + ".png");
@@ -209,15 +213,17 @@ namespace Screenshoter.UI
             }
             catch (Exception ex3)
             {
-                MessageBox.Show(ex3.ToString(), @"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex3.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                BtnTakeMeToChurch.Enabled = true;
             }
             if (ChkCustomPath.Checked)
             {
                 if (string.IsNullOrWhiteSpace(finalfilepath))
                 {
-                    MessageBox.Show(@"File was saved but not copied 'cause you not selected your putput directory!",
-                        @"Error", MessageBoxButtons.OK,
+                    MessageBox.Show(Strings.ErrorSaving,
+                        Strings.Error, MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
+                    BtnTakeMeToChurch.Enabled = true;
                 }
                 else
                 {
@@ -229,14 +235,19 @@ namespace Screenshoter.UI
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.ToString(), @"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show(ex.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        BtnTakeMeToChurch.Enabled = true;
                     }
                 }
             }
             notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
             notifyIcon.BalloonTipTitle = Text;
-            notifyIcon.BalloonTipText = @"Скриншот сделан!";
+            notifyIcon.BalloonTipText = Strings.ScreenshotDone;
+                ;
             notifyIcon.ShowBalloonTip(10000);
+            var str = Properties.Resources.Windows_Error8;
+            var snd = new SoundPlayer(str);
+            snd.Play();
             BtnTakeMeToChurch.Enabled = true;
         }
 
@@ -253,7 +264,12 @@ namespace Screenshoter.UI
             }
         }
 
+        #endregion
         #region UI Magic
+        private void ChkAdb_CheckedChanged(object sender, EventArgs e)
+        {
+            ChkAdb.Checked = true;
+        }
 
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -272,7 +288,7 @@ namespace Screenshoter.UI
         {
             if (FormWindowState.Minimized != WindowState) return;
             notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
-            notifyIcon.BalloonTipText = @"Программа была свернута. Найти ее можно здесь.";
+            notifyIcon.BalloonTipText = Strings.ProgrammMinimized;
             notifyIcon.ShowBalloonTip(30000);
             Hide();
         }
@@ -300,8 +316,9 @@ namespace Screenshoter.UI
             GbCustomPath.Enabled = ChkCustomPath.Checked;
         }
 
+
         #endregion
 
-        
+       
     }
 }

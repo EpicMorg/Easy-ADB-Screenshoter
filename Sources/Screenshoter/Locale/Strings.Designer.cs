@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Screenshoter.Properties {
+namespace Screenshoter.Locale {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Screenshoter.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Strings() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Screenshoter.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Screenshoter.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Screenshoter.Locale.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,21 +61,74 @@ namespace Screenshoter.Properties {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        ///   Ищет локализованную строку, похожую на Adb not found!.
         /// </summary>
-        internal static System.Drawing.Bitmap photo {
+        internal static string AdbFound {
             get {
-                object obj = ResourceManager.GetObject("photo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("AdbFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        ///   Ищет локализованную строку, похожую на Adb found!.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Windows_Error8 {
+        internal static string AdbNotFound {
             get {
-                return ResourceManager.GetStream("Windows_Error8", resourceCulture);
+                return ResourceManager.GetString("AdbNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Error.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Enter IP and Port or disablr this checkbox!.
+        /// </summary>
+        internal static string ErrorIpPort {
+            get {
+                return ResourceManager.GetString("ErrorIpPort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на File was saved but not copied because you not selected your output directory!.
+        /// </summary>
+        internal static string ErrorSaving {
+            get {
+                return ResourceManager.GetString("ErrorSaving", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ready..
+        /// </summary>
+        internal static string PreparedToWork {
+            get {
+                return ResourceManager.GetString("PreparedToWork", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на The program was minimized. You can find it here..
+        /// </summary>
+        internal static string ProgrammMinimized {
+            get {
+                return ResourceManager.GetString("ProgrammMinimized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Screenshot created successfully!.
+        /// </summary>
+        internal static string ScreenshotDone {
+            get {
+                return ResourceManager.GetString("ScreenshotDone", resourceCulture);
             }
         }
     }

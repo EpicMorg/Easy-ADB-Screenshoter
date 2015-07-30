@@ -117,11 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AdbFound" xml:space="preserve">
+    <value>Adb not found!</value>
   </data>
-  <data name="Windows_Error8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Windows_Error8.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AdbNotFound" xml:space="preserve">
+    <value>Adb found!</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorIpPort" xml:space="preserve">
+    <value>Enter IP and Port or disablr this checkbox!</value>
+  </data>
+  <data name="ErrorSaving" xml:space="preserve">
+    <value>File was saved but not copied because you not selected your output directory!</value>
+  </data>
+  <data name="PreparedToWork" xml:space="preserve">
+    <value>Ready.</value>
+  </data>
+  <data name="ProgrammMinimized" xml:space="preserve">
+    <value>The program was minimized. You can find it here.</value>
+  </data>
+  <data name="ScreenshotDone" xml:space="preserve">
+    <value>Screenshot created successfully!</value>
   </data>
 </root>
