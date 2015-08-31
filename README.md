@@ -15,7 +15,8 @@ Simple GUI for adb.exe for taking screenshots.
 - [ipaddresscontrollib](https://github.com/m66n/ipaddresscontrollib)
 
 ## Changelog
-- 1.0.0.2 Fixed "adb.exe kill-server" on exit, fixed localizations, added new button to kill adb server manually
+- 1.0.0.4 - Updated UI, minor fixes.
+- 1.0.0.3 - Fixed "adb.exe kill-server" on exit, fixed localizations, added new button to kill adb server manually
 - 1.0.0.2 - Minor bugfixes, ru_RU locale
 - 1.0.0.1 - Public release on github, bugfixes
 - 1.0.0.0 - Initial release for internal use only

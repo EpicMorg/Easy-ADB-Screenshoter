@@ -369,5 +369,16 @@ namespace Screenshoter.UI
         {
             AdbKiller();
         }
+
+        private void LinkLabelGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/stamepicmorg/Android-ADB-Screenshoter");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var frmmit = new FrmMit();
+            frmmit.ShowDialog();
+        }
     }
 }
