@@ -118,10 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AdbFound" xml:space="preserve">
-    <value>Adb not found!</value>
+    <value>Adb found!</value>
   </data>
   <data name="AdbNotFound" xml:space="preserve">
-    <value>Adb found!</value>
+    <value>Adb not found!</value>
+  </data>
+  <data name="AdbServerNotStopped" xml:space="preserve">
+    <value>Adb Server is not running. Nothing to stop.</value>
+  </data>
+  <data name="AdbServerStopped" xml:space="preserve">
+    <value>Adb Server stopped successfully!</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>

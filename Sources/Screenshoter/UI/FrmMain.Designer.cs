@@ -49,6 +49,7 @@
             this.TxtCustomPath = new System.Windows.Forms.TextBox();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.BtnTakeMeToChurch = new System.Windows.Forms.Button();
+            this.BtnAdbKill = new System.Windows.Forms.Button();
             this.GbAdb.SuspendLayout();
             this.GbCustomDevice.SuspendLayout();
             this.GbCustomPath.SuspendLayout();
@@ -110,8 +111,8 @@
             // 
             // IpCustomDeviceIp
             // 
-            resources.ApplyResources(this.IpCustomDeviceIp, "IpCustomDeviceIp");
             this.IpCustomDeviceIp.AllowInternalTab = false;
+            resources.ApplyResources(this.IpCustomDeviceIp, "IpCustomDeviceIp");
             this.IpCustomDeviceIp.AutoHeight = true;
             this.IpCustomDeviceIp.BackColor = System.Drawing.SystemColors.Window;
             this.IpCustomDeviceIp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -189,11 +190,19 @@
             this.BtnTakeMeToChurch.UseVisualStyleBackColor = true;
             this.BtnTakeMeToChurch.Click += new System.EventHandler(this.BtnTakeMeToChurch_Click);
             // 
+            // BtnAdbKill
+            // 
+            resources.ApplyResources(this.BtnAdbKill, "BtnAdbKill");
+            this.BtnAdbKill.Name = "BtnAdbKill";
+            this.BtnAdbKill.UseVisualStyleBackColor = true;
+            this.BtnAdbKill.Click += new System.EventHandler(this.BtnAdbKill_Click);
+            // 
             // FrmMain
             // 
             this.AcceptButton = this.BtnTakeMeToChurch;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.BtnAdbKill);
             this.Controls.Add(this.BtnTakeMeToChurch);
             this.Controls.Add(this.ChkCustomPath);
             this.Controls.Add(this.GbCustomPath);
@@ -203,6 +212,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmMain";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.GbAdb.ResumeLayout(false);
@@ -237,6 +247,7 @@
         private System.Windows.Forms.TextBox TxtScreenFilename;
         private System.Windows.Forms.TextBox TxtScreenPath;
         private System.Windows.Forms.Label LblScreenFilename;
+        private System.Windows.Forms.Button BtnAdbKill;
     }
 }
 

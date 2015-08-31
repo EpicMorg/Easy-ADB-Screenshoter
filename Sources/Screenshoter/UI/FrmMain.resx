@@ -117,113 +117,696 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;TxtAdbPath.Parent" xml:space="preserve">
-    <value>GbAdb</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GbAdb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TxtScreenFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TxtScreenPath.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TxtScreenFilename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 101</value>
+  </data>
+  <data name="TxtScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
     <value>290, 20</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BtnCustomPath.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="TxtScreenFilename.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;ChkCustomDevice.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="TxtScreenFilename.Text" xml:space="preserve">
+    <value>screenshot</value>
   </data>
-  <data name="LblScreenFilename.Text" xml:space="preserve">
-    <value>File name only (without .png, .jpg, etc):</value>
+  <data name="&gt;&gt;TxtScreenFilename.Name" xml:space="preserve">
+    <value>TxtScreenFilename</value>
+  </data>
+  <data name="&gt;&gt;TxtScreenFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtScreenFilename.Parent" xml:space="preserve">
+    <value>GbAdb</value>
+  </data>
+  <data name="&gt;&gt;TxtScreenFilename.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TxtScreenPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TxtScreenPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 62</value>
+  </data>
+  <data name="TxtScreenPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 20</value>
   </data>
   <data name="TxtScreenPath.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="GbCustomPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 217</value>
-  </data>
-  <data name="&gt;&gt;TxtAdbPath.Name" xml:space="preserve">
-    <value>TxtAdbPath</value>
-  </data>
-  <data name="BtnCustomPath.Text" xml:space="preserve">
-    <value>Browse</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomDeviceSelect.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GbCustomDevice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="ChkAdb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
-  </data>
-  <data name="BtnCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomDeviceSelect.Parent" xml:space="preserve">
-    <value>GbCustomDevice</value>
-  </data>
-  <data name="&gt;&gt;IpCustomDeviceIp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BtnAdbPath.Parent" xml:space="preserve">
-    <value>GbAdb</value>
-  </data>
   <data name="TxtScreenPath.Text" xml:space="preserve">
     <value>/sdcard/</value>
   </data>
-  <data name="&gt;&gt;GbCustomDevice.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;TxtScreenPath.Name" xml:space="preserve">
+    <value>TxtScreenPath</value>
   </data>
-  <data name="&gt;&gt;IpCustomDeviceIp.Parent" xml:space="preserve">
-    <value>GbCustomDevice</value>
+  <data name="&gt;&gt;TxtScreenPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtScreenPath.Parent" xml:space="preserve">
+    <value>GbAdb</value>
+  </data>
+  <data name="&gt;&gt;TxtScreenPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LblScreenFilename.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblScreenFilename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 85</value>
+  </data>
+  <data name="LblScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 13</value>
+  </data>
+  <data name="LblScreenFilename.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LblScreenFilename.Text" xml:space="preserve">
+    <value>Имя файла (без расширения .png, .jpg, и т.д.):</value>
+  </data>
+  <data name="&gt;&gt;LblScreenFilename.Name" xml:space="preserve">
+    <value>LblScreenFilename</value>
+  </data>
+  <data name="&gt;&gt;LblScreenFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblScreenFilename.Parent" xml:space="preserve">
     <value>GbAdb</value>
   </data>
-  <data name="BtnCustomDeviceSelect.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;LblScreenFilename.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LblScreenPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblScreenPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="LblScreenPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 13</value>
+  </data>
+  <data name="LblScreenPath.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LblScreenPath.Text" xml:space="preserve">
+    <value>Где хранить скриншоты (на устройстве):</value>
+  </data>
+  <data name="&gt;&gt;LblScreenPath.Name" xml:space="preserve">
+    <value>LblScreenPath</value>
+  </data>
+  <data name="&gt;&gt;LblScreenPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblScreenPath.Parent" xml:space="preserve">
+    <value>GbAdb</value>
+  </data>
+  <data name="&gt;&gt;LblScreenPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BtnAdbPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnAdbPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 21</value>
+  </data>
+  <data name="BtnAdbPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;ChkCustomDevice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BtnAdbPath.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;GbAdb.Name" xml:space="preserve">
+  <data name="BtnAdbPath.Text" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbPath.Name" xml:space="preserve">
+    <value>BtnAdbPath</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbPath.Parent" xml:space="preserve">
+    <value>GbAdb</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbPath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TxtAdbPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TxtAdbPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="TxtAdbPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 20</value>
+  </data>
+  <data name="TxtAdbPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TxtAdbPath.Text" xml:space="preserve">
+    <value>adb.exe</value>
+  </data>
+  <data name="&gt;&gt;TxtAdbPath.Name" xml:space="preserve">
+    <value>TxtAdbPath</value>
+  </data>
+  <data name="&gt;&gt;TxtAdbPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtAdbPath.Parent" xml:space="preserve">
     <value>GbAdb</value>
   </data>
   <data name="&gt;&gt;TxtAdbPath.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="GbCustomDevice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 153</value>
+  <data name="ChkAdb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;LblScreenPath.Name" xml:space="preserve">
-    <value>LblScreenPath</value>
+  <data name="ChkAdb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Android ADB Screenshoter</value>
+  <data name="ChkAdb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
   </data>
-  <data name="TxtCustomDevicePort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="ChkAdb.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;GbCustomPath.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ChkAdb.Text" xml:space="preserve">
+    <value>Adb not found!</value>
   </data>
-  <data name="LblScreenPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 46</value>
+  <data name="&gt;&gt;ChkAdb.Name" xml:space="preserve">
+    <value>ChkAdb</value>
   </data>
-  <data name="&gt;&gt;LblScreenPath.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;ChkAdb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ChkAdb.Parent" xml:space="preserve">
     <value>GbAdb</value>
   </data>
+  <data name="&gt;&gt;ChkAdb.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="GbAdb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="GbAdb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 134</value>
+  </data>
+  <data name="GbAdb.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GbAdb.Name" xml:space="preserve">
+    <value>GbAdb</value>
+  </data>
+  <data name="&gt;&gt;GbAdb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GbAdb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GbAdb.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="IpCustomDeviceIp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="IpCustomDeviceIp.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="IpCustomDeviceIp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="IpCustomDeviceIp.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="IpCustomDeviceIp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 20</value>
+  </data>
+  <data name="IpCustomDeviceIp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="IpCustomDeviceIp.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;IpCustomDeviceIp.Name" xml:space="preserve">
+    <value>IpCustomDeviceIp</value>
+  </data>
+  <data name="&gt;&gt;IpCustomDeviceIp.Type" xml:space="preserve">
+    <value>IPAddressControlLib.IPAddressControl, IPAddressControlLib, Version=1.2.5721.20340, Culture=neutral, PublicKeyToken=7052a5c2c6d6e1fc</value>
+  </data>
+  <data name="&gt;&gt;IpCustomDeviceIp.Parent" xml:space="preserve">
+    <value>GbCustomDevice</value>
+  </data>
+  <data name="&gt;&gt;IpCustomDeviceIp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GbCustomDevice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="BtnCustomDeviceSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnCustomDeviceSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 21</value>
+  </data>
+  <data name="BtnCustomDeviceSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BtnCustomDeviceSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="BtnCustomDeviceSelect.Text" xml:space="preserve">
+    <value>Устройства</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomDeviceSelect.Name" xml:space="preserve">
+    <value>BtnCustomDeviceSelect</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomDeviceSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomDeviceSelect.Parent" xml:space="preserve">
+    <value>GbCustomDevice</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomDeviceSelect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TxtCustomDevicePort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="TxtCustomDevicePort.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TxtCustomDevicePort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 23</value>
+  </data>
+  <data name="TxtCustomDevicePort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="TxtCustomDevicePort.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomDevicePort.Name" xml:space="preserve">
+    <value>TxtCustomDevicePort</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomDevicePort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomDevicePort.Parent" xml:space="preserve">
+    <value>GbCustomDevice</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomDevicePort.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GbCustomDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 153</value>
+  </data>
+  <data name="GbCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 58</value>
+  </data>
+  <data name="GbCustomDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;GbCustomDevice.Name" xml:space="preserve">
+    <value>GbCustomDevice</value>
+  </data>
+  <data name="&gt;&gt;GbCustomDevice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GbCustomDevice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GbCustomDevice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ChkCustomDevice.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ChkCustomDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 152</value>
+  </data>
+  <data name="ChkCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 17</value>
+  </data>
+  <data name="ChkCustomDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ChkCustomDevice.Text" xml:space="preserve">
+    <value>Подключаться к выбранному устройству (через IP:Порт):</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomDevice.Name" xml:space="preserve">
+    <value>ChkCustomDevice</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomDevice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomDevice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomDevice.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ChkCustomPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ChkCustomPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 216</value>
+  </data>
+  <data name="ChkCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 17</value>
+  </data>
   <data name="ChkCustomPath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="ChkCustomPath.Text" xml:space="preserve">
+    <value>Переместить сохраненные изображения:</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomPath.Name" xml:space="preserve">
+    <value>ChkCustomPath</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ChkCustomPath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GbCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="BtnCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnCustomPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 21</value>
+  </data>
+  <data name="BtnCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BtnCustomPath.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="BtnCustomPath.Text" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomPath.Name" xml:space="preserve">
+    <value>BtnCustomPath</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomPath.Parent" xml:space="preserve">
+    <value>GbCustomPath</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomPath.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TxtCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TxtCustomPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="TxtCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 20</value>
+  </data>
+  <data name="TxtCustomPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomPath.Name" xml:space="preserve">
+    <value>TxtCustomPath</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomPath.Parent" xml:space="preserve">
+    <value>GbCustomPath</value>
+  </data>
+  <data name="&gt;&gt;TxtCustomPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GbCustomPath.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GbCustomPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 217</value>
+  </data>
+  <data name="GbCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 58</value>
+  </data>
+  <data name="GbCustomPath.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;GbCustomPath.Name" xml:space="preserve">
+    <value>GbCustomPath</value>
+  </data>
+  <data name="&gt;&gt;GbCustomPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GbCustomPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GbCustomPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAABILAAASCwAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAbwAAANAAAADqAAAA6wAAAOoAAADlAAAA3gAA
+        AN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAA
+        AN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADCAAAAbAAAAAIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0AAAA/wQEBP8YGBj/GRkZ/xkZ
+        Gf8SEhL/CQkJ/yYmJv8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0t
+        Lf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/ywsLP8KCgr9AAAA/wAA
+        AKcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEUAAAD/SEhI/83N
+        zf/Q0ND/0NDQ/9DQ0P/Q0ND/r6+v/zo6Ov/e3t7/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
+        4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
+        4f/d3d3/XV1d/wAAAP8AAABDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AKwGBgb/ysrK/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/1paWv+tra3/4eHh/+Hh4f/h4eH/4eHh/+Hh
+        4f/h4eH/4eHh/+Hh4f+4uLj/hISE/25ubv9ubm7/hISE/7i4uP/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
+        4f/h4eH/4eHh/+Hh4f/h4eH/29vb/w4ODvwAAACTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAANcbGxv/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3l5ef+IiIj/4eHh/+Hh
+        4f/h4eH/4eHh/+Hh4f/d3d3/ioqK/xwcHP8KCgr/Li4u/zw8PP88PDz/Li4u/woKCv8cHBz/ioqK/93d
+        3f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zExMf4AAAC8AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6
+        ev+EhIT/4eHh/+Hh4f/h4eH/4eHh/87Ozv8yMjL/GBgY/2JiYv+VlZX/mZmZ/5mZmf+ZmZn/mZmZ/5WV
+        lf9iYmL/GBgY/zIyMv/Ozs7/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ
+        0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f/h4eH/z8/P/x0dHf84ODj/lJSU/5mZmf+ZmZn/mZmZ/5mZ
+        mf+ZmZn/mZmZ/5mZmf+ZmZn/lJSU/zg4OP8dHR3/z8/P/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1
+        Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ
+        0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f/h4eH/PT09/z4+Pv+ZmZn/mZmZ/5mZ
+        mf+ZmZn/mZmZ/5aWlv+Wlpb/mZmZ/5mZmf+ZmZn/mZmZ/5mZmf8+Pj7/PT09/+Hh4f/h4eH/4eHh/+Hh
+        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
+        AP8AAAD/AAAA/wUFBf89PT3/mZmZ/5mZmf+ZmZn/a2tr/yQkJP/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1
+        Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ
+        0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f+ampr/ISEh/5WVlf+ZmZn/mZmZ/5mZ
+        mf9fX1//GBgY/wAAAP8AAAD/GBgY/19fX/+ZmZn/mZmZ/5mZmf+VlZX/ISEh/5qamv/h4eH/4eHh/+Hh
+        4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f/h4eH/PT09/z4+
+        Pv+ZmZn/mZmZ/5mZmf+ZmZn/mZmZ/5aWlv+Wlpb/mZmZ/5mZmf+ZmZn/mZmZ/5mZmf8+Pj7/PT09/+Hh
+        4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh
+        4f/h4eH/z8/P/x0dHf84ODj/lJSU/5mZmf+ZmZn/mZmZ/5mZmf+ZmZn/mZmZ/5mZmf+ZmZn/lJSU/zg4
+        OP8dHR3/z8/P/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6
+        ev+EhIT/4eHh/+Hh4f/h4eH/4eHh/87Ozv8yMjL/GBgY/2JiYv+VlZX/mZmZ/5mZmf+ZmZn/mZmZ/5WV
+        lf9iYmL/GBgY/zIyMv/Ozs7/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANcbGxv/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ
+        0P/Q0ND/0NDQ/3l5ef+IiIj/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/d3d3/ioqK/xwcHP8KCgr/Li4u/zo6
+        Ov85OTn/JiYm/wYGBv8MDAz/JSUl/zs7O/88PDz/PDw8/zw8PP88PDz/PDw8/zw8PP+Ghob/4eHh/zEx
+        Mf4AAAC8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKwFBQX/ycnJ/9DQ
+        0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/1paWv+tra3/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
+        4f+4uLj/hISE/xoaGv8AAAD/Jycn/zc3N/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/wAA
+        AP81NTX/2tra/wwMDPwAAACTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AEIAAAD/RUVF/8rKyv/Q0ND/0NDQ/9DQ0P/Q0ND/r6+v/zo6Ov/e3t7/4eHh/+Hh4f/h4eH/4eHh/+Hh
+        4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf88PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39
+        /f/9/f3//f39/zw8PP80NDT/WFhY/wAAAP8AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAACtAAAA/wMDA/8QEBD/ERER/xAQEP8MDAz/BgYG/xoaGv8eHh7/Hh4e/x4e
+        Hv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/wcHB/88PDz//f39//39/f/9/f3//f39//39
+        /f/9/f3//f39//39/f/9/f3//f39/zw8PP8CAgL/AAAA/wAAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAaQAAAMsAAADqAAAA6wAAAOoAAADlAAAA3gAA
+        AN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAPc8PDz//f39//39
+        /f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADvAAAAZQAAAAEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8
+        PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39
+        /f/9/f3//f39/zw8PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39
+        /f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMM8PDz//f39//39
+        /f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8
+        PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMAAAD/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0ND
+        Q/9DQ0P/Q0ND/wAAAP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGcAAAC7AAAAuwAAALsAAAC7AAAAuwAA
+        ALsAAAC7AAAAuwAAALsAAAC7AAAAuwAAALsAAABnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA/AAAAAA/AAD8AAAAAD8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgA
+        AAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAf
+        AAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgA
+        AAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA/AAAAAA/AAD8AAAAAD8AAP///8AA/wAA////wAD/
+        AAD////AAP8AAP///8AA/wAA////wAD/AAD////AAP8AAP///8AA/wAA////wAD/AAD////AAP8AAP//
+        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////
+        AAA=
+</value>
+  </data>
+  <data name="notifyIcon.Text" xml:space="preserve">
+    <value>notifyIcon1</value>
+  </data>
+  <data name="notifyIcon.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="BtnTakeMeToChurch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="BtnTakeMeToChurch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 17</value>
+  </data>
+  <data name="BtnTakeMeToChurch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 130</value>
+  </data>
+  <data name="BtnTakeMeToChurch.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;BtnTakeMeToChurch.Name" xml:space="preserve">
+    <value>BtnTakeMeToChurch</value>
+  </data>
+  <data name="&gt;&gt;BtnTakeMeToChurch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnTakeMeToChurch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnTakeMeToChurch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BtnAdbKill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 6</value>
+  </data>
+  <data name="BtnAdbKill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BtnAdbKill.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BtnAdbKill.Text" xml:space="preserve">
+    <value>ADB Kill</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbKill.Name" xml:space="preserve">
+    <value>BtnAdbKill</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbKill.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbKill.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnAdbKill.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>484, 291</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1357,587 +1940,25 @@
         //////////////////////////////////8=
 </value>
   </data>
-  <data name="ChkCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 17</value>
-  </data>
-  <data name="&gt;&gt;BtnTakeMeToChurch.Name" xml:space="preserve">
-    <value>BtnTakeMeToChurch</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomPath.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TxtAdbPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="BtnCustomDeviceSelect.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="BtnTakeMeToChurch.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="GbCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="BtnCustomDeviceSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="GbAdb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="ChkCustomDevice.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LblScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 13</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BtnAdbPath.Text" xml:space="preserve">
-    <value>Browse</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomPath.Parent" xml:space="preserve">
-    <value>GbCustomPath</value>
-  </data>
-  <data name="IpCustomDeviceIp.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
-    <value>notifyIcon</value>
-  </data>
-  <data name="IpCustomDeviceIp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 20</value>
-  </data>
-  <data name="LblScreenPath.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;LblScreenPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TxtCustomDevicePort.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;GbAdb.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="IpCustomDeviceIp.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomDevicePort.Name" xml:space="preserve">
-    <value>TxtCustomDevicePort</value>
-  </data>
-  <data name="LblScreenPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 13</value>
-  </data>
-  <data name="TxtAdbPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="LblScreenPath.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmMain</value>
-  </data>
-  <data name="&gt;&gt;GbCustomDevice.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="notifyIcon.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ChkCustomPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 216</value>
-  </data>
-  <data name="ChkAdb.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomPath.Name" xml:space="preserve">
-    <value>BtnCustomPath</value>
-  </data>
-  <data name="BtnAdbPath.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="ChkAdb.Text" xml:space="preserve">
-    <value>Adb not found!</value>
-  </data>
-  <data name="ChkCustomPath.Text" xml:space="preserve">
-    <value>Save screenshos at this path:</value>
-  </data>
-  <data name="&gt;&gt;GbCustomDevice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>500, 330</value>
-  </data>
-  <data name="GbCustomPath.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="TxtScreenPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;IpCustomDeviceIp.Type" xml:space="preserve">
-    <value>IPAddressControlLib.IPAddressControl, IPAddressControlLib, Version=1.2.5688.20231, Culture=neutral, PublicKeyToken=7052a5c2c6d6e1fc</value>
-  </data>
-  <data name="TxtCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;ChkCustomDevice.Name" xml:space="preserve">
-    <value>ChkCustomDevice</value>
-  </data>
-  <data name="TxtScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 20</value>
-  </data>
-  <data name="GbCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 58</value>
-  </data>
-  <data name="BtnCustomDeviceSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 21</value>
-  </data>
-  <data name="BtnCustomPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 21</value>
-  </data>
-  <data name="TxtScreenFilename.Text" xml:space="preserve">
-    <value>screenshot</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomDevicePort.Parent" xml:space="preserve">
-    <value>GbCustomDevice</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ChkCustomPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChkCustomPath.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LblScreenFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="GbAdb.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BtnAdbPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LblScreenFilename.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="TxtAdbPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 20</value>
-  </data>
-  <data name="GbAdb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="TxtCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 20</value>
-  </data>
-  <data name="TxtCustomDevicePort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 23</value>
-  </data>
-  <data name="&gt;&gt;IpCustomDeviceIp.Name" xml:space="preserve">
-    <value>IpCustomDeviceIp</value>
-  </data>
-  <data name="BtnCustomDeviceSelect.Text" xml:space="preserve">
-    <value>Devices</value>
-  </data>
-  <data name="&gt;&gt;ChkCustomPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;GbCustomPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TxtAdbPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BtnTakeMeToChurch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 17</value>
-  </data>
-  <data name="TxtScreenPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 62</value>
-  </data>
-  <data name="&gt;&gt;BtnTakeMeToChurch.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="GbCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 58</value>
-  </data>
-  <data name="&gt;&gt;GbAdb.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ChkCustomDevice.Text" xml:space="preserve">
-    <value>Select custom device (via IP)</value>
-  </data>
-  <data name="IpCustomDeviceIp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;ChkCustomPath.Name" xml:space="preserve">
-    <value>ChkCustomPath</value>
-  </data>
-  <data name="&gt;&gt;GbCustomPath.Name" xml:space="preserve">
-    <value>GbCustomPath</value>
-  </data>
-  <data name="&gt;&gt;GbAdb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomDevicePort.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LblScreenFilename.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LblScreenFilename.Name" xml:space="preserve">
-    <value>LblScreenFilename</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenPath.Parent" xml:space="preserve">
-    <value>GbAdb</value>
-  </data>
-  <data name="BtnAdbPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="TxtScreenFilename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 101</value>
-  </data>
-  <data name="ChkCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 17</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomDevicePort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChkAdb.Name" xml:space="preserve">
-    <value>ChkAdb</value>
-  </data>
-  <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAABILAAASCwAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAbwAAANAAAADqAAAA6wAAAOoAAADlAAAA3gAA
-        AN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAA
-        AN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADCAAAAbAAAAAIAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0AAAA/wQEBP8YGBj/GRkZ/xkZ
-        Gf8SEhL/CQkJ/yYmJv8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0t
-        Lf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/y0tLf8tLS3/LS0t/ywsLP8KCgr9AAAA/wAA
-        AKcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEUAAAD/SEhI/83N
-        zf/Q0ND/0NDQ/9DQ0P/Q0ND/r6+v/zo6Ov/e3t7/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
-        4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
-        4f/d3d3/XV1d/wAAAP8AAABDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AKwGBgb/ysrK/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/1paWv+tra3/4eHh/+Hh4f/h4eH/4eHh/+Hh
-        4f/h4eH/4eHh/+Hh4f+4uLj/hISE/25ubv9ubm7/hISE/7i4uP/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
-        4f/h4eH/4eHh/+Hh4f/h4eH/29vb/w4ODvwAAACTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAANcbGxv/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3l5ef+IiIj/4eHh/+Hh
-        4f/h4eH/4eHh/+Hh4f/d3d3/ioqK/xwcHP8KCgr/Li4u/zw8PP88PDz/Li4u/woKCv8cHBz/ioqK/93d
-        3f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zExMf4AAAC8AAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6
-        ev+EhIT/4eHh/+Hh4f/h4eH/4eHh/87Ozv8yMjL/GBgY/2JiYv+VlZX/mZmZ/5mZmf+ZmZn/mZmZ/5WV
-        lf9iYmL/GBgY/zIyMv/Ozs7/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ
-        0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f/h4eH/z8/P/x0dHf84ODj/lJSU/5mZmf+ZmZn/mZmZ/5mZ
-        mf+ZmZn/mZmZ/5mZmf+ZmZn/lJSU/zg4OP8dHR3/z8/P/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1
-        Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ
-        0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f/h4eH/PT09/z4+Pv+ZmZn/mZmZ/5mZ
-        mf+ZmZn/mZmZ/5aWlv+Wlpb/mZmZ/5mZmf+ZmZn/mZmZ/5mZmf8+Pj7/PT09/+Hh4f/h4eH/4eHh/+Hh
-        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
-        AP8AAAD/AAAA/wUFBf89PT3/mZmZ/5mZmf+ZmZn/a2tr/yQkJP/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1
-        Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ
-        0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f+ampr/ISEh/5WVlf+ZmZn/mZmZ/5mZ
-        mf9fX1//GBgY/wAAAP8AAAD/GBgY/19fX/+ZmZn/mZmZ/5mZmf+VlZX/ISEh/5qamv/h4eH/4eHh/+Hh
-        4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        ANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh4f/h4eH/PT09/z4+
-        Pv+ZmZn/mZmZ/5mZmf+ZmZn/mZmZ/5aWlv+Wlpb/mZmZ/5mZmf+ZmZn/mZmZ/5mZmf8+Pj7/PT09/+Hh
-        4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6ev+EhIT/4eHh/+Hh
-        4f/h4eH/z8/P/x0dHf84ODj/lJSU/5mZmf+ZmZn/mZmZ/5mZmf+ZmZn/mZmZ/5mZmf+ZmZn/lJSU/zg4
-        OP8dHR3/z8/P/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANwdHR3/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/3p6
-        ev+EhIT/4eHh/+Hh4f/h4eH/4eHh/87Ozv8yMjL/GBgY/2JiYv+VlZX/mZmZ/5mZmf+ZmZn/mZmZ/5WV
-        lf9iYmL/GBgY/zIyMv/Ozs7/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf8AAADDAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANcbGxv/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ
-        0P/Q0ND/0NDQ/3l5ef+IiIj/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/d3d3/ioqK/xwcHP8KCgr/Li4u/zo6
-        Ov85OTn/JiYm/wYGBv8MDAz/JSUl/zs7O/88PDz/PDw8/zw8PP88PDz/PDw8/zw8PP+Ghob/4eHh/zEx
-        Mf4AAAC8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKwFBQX/ycnJ/9DQ
-        0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/1paWv+tra3/4eHh/+Hh4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/+Hh
-        4f+4uLj/hISE/xoaGv8AAAD/Jycn/zc3N/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/wAA
-        AP81NTX/2tra/wwMDPwAAACTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AEIAAAD/RUVF/8rKyv/Q0ND/0NDQ/9DQ0P/Q0ND/r6+v/zo6Ov/e3t7/4eHh/+Hh4f/h4eH/4eHh/+Hh
-        4f/h4eH/4eHh/+Hh4f/h4eH/4eHh/zU1Nf88PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39
-        /f/9/f3//f39/zw8PP80NDT/WFhY/wAAAP8AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAACtAAAA/wMDA/8QEBD/ERER/xAQEP8MDAz/BgYG/xoaGv8eHh7/Hh4e/x4e
-        Hv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/wcHB/88PDz//f39//39/f/9/f3//f39//39
-        /f/9/f3//f39//39/f/9/f3//f39/zw8PP8CAgL/AAAA/wAAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAaQAAAMsAAADqAAAA6wAAAOoAAADlAAAA3gAA
-        AN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAN0AAADdAAAA3QAAAPc8PDz//f39//39
-        /f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADvAAAAZQAAAAEAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8
-        PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39
-        /f/9/f3//f39/zw8PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39
-        /f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMM8PDz//f39//39
-        /f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8PP8AAADDAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAMM8PDz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/zw8
-        PP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMAAAD/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0ND
-        Q/9DQ0P/Q0ND/wAAAP8AAADDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGcAAAC7AAAAuwAAALsAAAC7AAAAuwAA
-        ALsAAAC7AAAAuwAAALsAAAC7AAAAuwAAALsAAABnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////
-        AAD///////8AAP///////wAA/AAAAAA/AAD8AAAAAD8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgA
-        AAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAf
-        AAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgA
-        AAAAHwAA+AAAAAAfAAD4AAAAAB8AAPgAAAAAHwAA/AAAAAA/AAD8AAAAAD8AAP///8AA/wAA////wAD/
-        AAD////AAP8AAP///8AA/wAA////wAD/AAD////AAP8AAP///8AA/wAA////wAD/AAD////AAP8AAP//
-        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////
-        AAA=
-</value>
-  </data>
-  <data name="IpCustomDeviceIp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 23</value>
-  </data>
-  <data name="TxtAdbPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 23</value>
-  </data>
-  <data name="ChkAdb.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LblScreenFilename.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomDeviceSelect.Name" xml:space="preserve">
-    <value>BtnCustomDeviceSelect</value>
-  </data>
-  <data name="LblScreenPath.Text" xml:space="preserve">
-    <value>Screenshot path on device:</value>
-  </data>
-  <data name="&gt;&gt;BtnAdbPath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="BtnCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomPath.Name" xml:space="preserve">
-    <value>TxtCustomPath</value>
-  </data>
-  <data name="notifyIcon.Text" xml:space="preserve">
-    <value>notifyIcon1</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomDeviceSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TxtCustomDevicePort.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TxtScreenFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenFilename.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BtnTakeMeToChurch.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenFilename.Parent" xml:space="preserve">
-    <value>GbAdb</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenPath.Name" xml:space="preserve">
-    <value>TxtScreenPath</value>
-  </data>
-  <data name="&gt;&gt;BtnAdbPath.Name" xml:space="preserve">
-    <value>BtnAdbPath</value>
-  </data>
-  <data name="&gt;&gt;ChkAdb.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;ChkAdb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ChkCustomDevice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 152</value>
-  </data>
-  <data name="&gt;&gt;BtnTakeMeToChurch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="IpCustomDeviceIp.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
-  </data>
-  <data name="ChkCustomDevice.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BtnCustomPath.Parent" xml:space="preserve">
-    <value>GbCustomPath</value>
-  </data>
-  <data name="&gt;&gt;GbCustomPath.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="GbCustomPath.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 291</value>
-  </data>
-  <data name="&gt;&gt;GbCustomDevice.Name" xml:space="preserve">
-    <value>GbCustomDevice</value>
-  </data>
-  <data name="TxtScreenFilename.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="ChkAdb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 0</value>
-  </data>
-  <data name="TxtAdbPath.Text" xml:space="preserve">
-    <value>adb.exe</value>
-  </data>
-  <data name="BtnTakeMeToChurch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 130</value>
-  </data>
-  <data name="LblScreenFilename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 85</value>
-  </data>
-  <data name="ChkCustomPath.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TxtCustomPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Android ADB Screenshoter</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
+    <value>notifyIcon</value>
   </data>
   <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BtnAdbPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 21</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmMain</value>
   </data>
-  <data name="BtnAdbPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="GbCustomDevice.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LblScreenPath.Parent" xml:space="preserve">
-    <value>GbAdb</value>
-  </data>
-  <data name="&gt;&gt;ChkCustomDevice.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="GbAdb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 134</value>
-  </data>
-  <data name="IpCustomDeviceIp.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TxtScreenFilename.Name" xml:space="preserve">
-    <value>TxtScreenFilename</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="TxtCustomPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 23</value>
-  </data>
-  <data name="TxtCustomDevicePort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ru</value>
-  </metadata>
 </root>

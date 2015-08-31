@@ -118,39 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LblScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 13</value>
-  </data>
-  <data name="LblScreenFilename.Text" xml:space="preserve">
-    <value>Имя файла (без расширения .png, .jpg, и т.д.):</value>
-  </data>
-  <data name="LblScreenPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 13</value>
-  </data>
-  <data name="LblScreenPath.Text" xml:space="preserve">
-    <value>Где хранить скриншоты (на устройстве):</value>
-  </data>
-  <data name="BtnAdbPath.Text" xml:space="preserve">
-    <value>Обзор</value>
-  </data>
-  <data name="BtnCustomDeviceSelect.Text" xml:space="preserve">
-    <value>Устройства</value>
-  </data>
-  <data name="ChkCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 17</value>
-  </data>
-  <data name="ChkCustomDevice.Text" xml:space="preserve">
-    <value>Подключаться к выбранному устройству (через IP:Порт):</value>
-  </data>
-  <data name="ChkCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 17</value>
-  </data>
-  <data name="ChkCustomPath.Text" xml:space="preserve">
-    <value>Переместить сохраненные изображения:</value>
-  </data>
-  <data name="BtnCustomPath.Text" xml:space="preserve">
-    <value>Обзор</value>
-  </data>
   <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAABILAAASCwAAAAAAAAAA

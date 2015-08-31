@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="14.0">
  <Targets>
-  <Target Name="E:\WORK\Git\Github\Screenshoter\IPAddressControlLib\bin\Release\IPAddressControlLib.dll">
+  <Target Name="E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\bin\Release\IPAddressControlLib.dll">
    <Modules>
     <Module Name="ipaddresscontrollib.dll">
      <Namespaces>
@@ -10,7 +10,7 @@
        <Types>
         <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
          <Messages>
-          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2015-07-29 12:24:58Z" FixCategory="NonBreaking">
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2015-08-31 08:50:36Z" FixCategory="NonBreaking">
            <Issue Certainty="75" Level="Warning">'Resources' является внутренним классом, экземпляр которого никогда явно не создается. Если это так, удалите код из сборки. Если этот класс должен содержать только статические методы, попробуйте добавить частный конструктор, чтобы компилятор не создавал заданный по умолчанию конструктор.</Issue>
           </Message>
          </Messages>
@@ -19,15 +19,15 @@
            <Accessors>
             <Accessor Name="#get_Culture()" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
              <Messages>
-              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-29 12:24:58Z" FixCategory="NonBreaking">
-               <Issue Certainty="75" Level="Warning" Path="E:\WORK\Git\Github\Screenshoter\IPAddressControlLib\Properties" File="Resources.Designer.cs" Line="56">Возможно, у 'Resources.Culture.get()' нет предшествующих открытых или защищенных вызывающих.</Issue>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-08-31 08:50:36Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\Properties" File="Resources.Designer.cs" Line="56">Возможно, у 'Resources.Culture.get()' нет предшествующих открытых или защищенных вызывающих.</Issue>
               </Message>
              </Messages>
             </Accessor>
             <Accessor Name="#set_Culture(System.Globalization.CultureInfo)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
              <Messages>
-              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-29 12:24:58Z" FixCategory="NonBreaking">
-               <Issue Certainty="75" Level="Warning" Path="E:\WORK\Git\Github\Screenshoter\IPAddressControlLib\Properties" File="Resources.Designer.cs" Line="59">Возможно, у 'Resources.Culture.set(CultureInfo)' нет предшествующих открытых или защищенных вызывающих.</Issue>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-08-31 08:50:36Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\Properties" File="Resources.Designer.cs" Line="59">Возможно, у 'Resources.Culture.set(CultureInfo)' нет предшествующих открытых или защищенных вызывающих.</Issue>
               </Message>
              </Messages>
             </Accessor>

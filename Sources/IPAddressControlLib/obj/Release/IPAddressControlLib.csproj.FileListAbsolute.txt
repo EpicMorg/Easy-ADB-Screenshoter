@@ -7,3 +7,12 @@ E:\WORK\Git\Github\Screenshoter\IPAddressControlLib\obj\Release\IPAddressControl
 E:\WORK\Git\Github\Screenshoter\IPAddressControlLib\obj\Release\IPAddressControlLib.csproj.GenerateResource.Cache
 E:\WORK\Git\Github\Screenshoter\IPAddressControlLib\obj\Release\IPAddressControlLib.dll
 E:\WORK\Git\Github\Screenshoter\IPAddressControlLib\obj\Release\IPAddressControlLib.pdb
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\bin\Release\IPAddressControlLib.dll
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\bin\Release\IPAddressControlLib.pdb
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\bin\Release\IPAddressControlLib.dll.CodeAnalysisLog.xml
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\bin\Release\IPAddressControlLib.dll.lastcodeanalysissucceeded
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\obj\Release\IPAddressControlLib.csprojResolveAssemblyReference.cache
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\obj\Release\IPAddressControlLib.Properties.Resources.resources
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\obj\Release\IPAddressControlLib.csproj.GenerateResource.Cache
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\obj\Release\IPAddressControlLib.dll
+E:\WORK\Git\Github\Android-ADB-Screenshoter\Sources\IPAddressControlLib\obj\Release\IPAddressControlLib.pdb

@@ -12,7 +12,8 @@ namespace Screenshoter.UI
     public sealed partial class FrmMain : Form
     {
         private string _adbPath;
-        private FormWindowState _oldFormState; 
+        private FormWindowState _oldFormState;
+        private bool _adbStatus = false;
 
         public FrmMain()
         {
@@ -26,6 +27,7 @@ namespace Screenshoter.UI
             notifyIcon.MouseClick += notifyIcon_MouseClick;
             Resize += FormForTray_Resize;
             AdbCheck();
+            Activate();
         }
 
         #region Core Magic 
@@ -33,7 +35,7 @@ namespace Screenshoter.UI
         private void AdbCheck()
         {
             if (!File.Exists(TxtAdbPath.Text))
-            {
+            { 
                 ChkAdb.Checked = false;
                 ChkAdb.Text = Strings.AdbNotFound;
                 var openFileDialog = new OpenFileDialog
@@ -64,16 +66,17 @@ namespace Screenshoter.UI
                 }
             }
             else
-            {
+            { 
                 TxtAdbPath.Text = Path.Combine(Application.StartupPath, "adb.exe");
                 ChkAdb.Checked = true;
-                ChkAdb.Text = Strings.AdbFound;
+                ChkAdb.Text = Strings.AdbFound; 
             }
         }
 
 
         private void BtnCustomDeviceSelect_Click(object sender, EventArgs e)
-        {
+        { 
+            _adbStatus = true;
             var frmadb = new FrmAdb(TxtAdbPath.Text);
             frmadb.ShowDialog();
         }
@@ -98,6 +101,7 @@ namespace Screenshoter.UI
 
         private void BtnTakeMeToChurch_Click(object sender, EventArgs e)
         {
+            _adbStatus = true;
             BtnTakeMeToChurch.Enabled = false;
             _adbPath = TxtAdbPath.Text;
             var ip = IpCustomDeviceIp.Text;
@@ -317,8 +321,53 @@ namespace Screenshoter.UI
         }
 
 
+
         #endregion
 
-       
+        private void AdbKiller()
+        {
+            if (_adbStatus == true)
+            {
+                try
+                {
+                    _adbPath = TxtAdbPath.Text;
+                    var p1 = new Process
+                    {
+                        StartInfo =
+                        {
+                            Arguments = "kill-server",
+                            UseShellExecute = false,
+                            FileName = _adbPath,
+                            RedirectStandardOutput = true,
+                            CreateNoWindow = true,
+                            StandardOutputEncoding = Encoding.GetEncoding(866)
+                        }
+                    };
+
+                    p1.Start();
+                    p1.WaitForExit();
+                    _adbStatus = false;
+                    MessageBox.Show(Strings.AdbServerStopped, Strings.Done, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+                catch (Exception ex1)
+                {
+                    MessageBox.Show(ex1.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show(Strings.AdbServerNotStopped, Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            AdbKiller();
+        }
+
+        private void BtnAdbKill_Click(object sender, EventArgs e)
+        {
+            AdbKiller();
+        }
     }
 }
