@@ -132,6 +132,15 @@
   <data name="Done" xml:space="preserve">
     <value>Выполнено</value>
   </data>
+  <data name="EasterEgg1" xml:space="preserve">
+    <value>Вы почти у цели. Осталось несколько шагов</value>
+  </data>
+  <data name="EasterEgg2" xml:space="preserve">
+    <value>Вы разработчик!</value>
+  </data>
+  <data name="EasterEgg3" xml:space="preserve">
+    <value>Не нужно, вы уже разработчик.</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Ошибка</value>
   </data>
@@ -149,5 +158,11 @@
   </data>
   <data name="ScreenshotDone" xml:space="preserve">
     <value>Скриншот сделан!</value>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="WarnAdbPathIsNull" xml:space="preserve">
+    <value>Вы не указали путь к Adb.exe. Хотите попробовать еще раз?</value>
   </data>
 </root>

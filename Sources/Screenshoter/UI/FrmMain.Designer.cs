@@ -38,9 +38,9 @@
             this.BtnAdbPath = new System.Windows.Forms.Button();
             this.TxtAdbPath = new System.Windows.Forms.TextBox();
             this.ChkAdb = new System.Windows.Forms.CheckBox();
-            this.IpCustomDeviceIp = new IPAddressControlLib.IPAddressControl();
             this.GbCustomDevice = new System.Windows.Forms.GroupBox();
             this.BtnCustomDeviceSelect = new System.Windows.Forms.Button();
+            this.IpCustomDeviceIp = new IPAddressControlLib.IPAddressControl();
             this.TxtCustomDevicePort = new System.Windows.Forms.TextBox();
             this.ChkCustomDevice = new System.Windows.Forms.CheckBox();
             this.ChkCustomPath = new System.Windows.Forms.CheckBox();
@@ -50,9 +50,7 @@
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.BtnTakeMeToChurch = new System.Windows.Forms.Button();
             this.BtnAdbKill = new System.Windows.Forms.Button();
-            this.LinkLabelGitHub = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.BtnAbout = new System.Windows.Forms.Button();
             this.GbAdb.SuspendLayout();
             this.GbCustomDevice.SuspendLayout();
             this.GbCustomPath.SuspendLayout();
@@ -111,17 +109,7 @@
             this.ChkAdb.Name = "ChkAdb";
             this.ChkAdb.UseVisualStyleBackColor = true;
             this.ChkAdb.CheckedChanged += new System.EventHandler(this.ChkAdb_CheckedChanged);
-            // 
-            // IpCustomDeviceIp
-            // 
-            resources.ApplyResources(this.IpCustomDeviceIp, "IpCustomDeviceIp");
-            this.IpCustomDeviceIp.AllowInternalTab = false;
-            this.IpCustomDeviceIp.AutoHeight = true;
-            this.IpCustomDeviceIp.BackColor = System.Drawing.SystemColors.Window;
-            this.IpCustomDeviceIp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.IpCustomDeviceIp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.IpCustomDeviceIp.Name = "IpCustomDeviceIp";
-            this.IpCustomDeviceIp.ReadOnly = false;
+            this.ChkAdb.Click += new System.EventHandler(this.ChkAdb_Click);
             // 
             // GbCustomDevice
             // 
@@ -138,6 +126,17 @@
             this.BtnCustomDeviceSelect.Name = "BtnCustomDeviceSelect";
             this.BtnCustomDeviceSelect.UseVisualStyleBackColor = true;
             this.BtnCustomDeviceSelect.Click += new System.EventHandler(this.BtnCustomDeviceSelect_Click);
+            // 
+            // IpCustomDeviceIp
+            // 
+            resources.ApplyResources(this.IpCustomDeviceIp, "IpCustomDeviceIp");
+            this.IpCustomDeviceIp.AllowInternalTab = false;
+            this.IpCustomDeviceIp.AutoHeight = true;
+            this.IpCustomDeviceIp.BackColor = System.Drawing.SystemColors.Window;
+            this.IpCustomDeviceIp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.IpCustomDeviceIp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IpCustomDeviceIp.Name = "IpCustomDeviceIp";
+            this.IpCustomDeviceIp.ReadOnly = false;
             // 
             // TxtCustomDevicePort
             // 
@@ -188,7 +187,7 @@
             // 
             resources.ApplyResources(this.BtnTakeMeToChurch, "BtnTakeMeToChurch");
             this.BtnTakeMeToChurch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnTakeMeToChurch.Image = global::Screenshoter.Properties.Resources.photo;
+            this.BtnTakeMeToChurch.Image = global::Screenshoter.Properties.Resources.google_android;
             this.BtnTakeMeToChurch.Name = "BtnTakeMeToChurch";
             this.BtnTakeMeToChurch.UseVisualStyleBackColor = true;
             this.BtnTakeMeToChurch.Click += new System.EventHandler(this.BtnTakeMeToChurch_Click);
@@ -196,37 +195,24 @@
             // BtnAdbKill
             // 
             resources.ApplyResources(this.BtnAdbKill, "BtnAdbKill");
+            this.BtnAdbKill.Image = global::Screenshoter.Properties.Resources.cross;
             this.BtnAdbKill.Name = "BtnAdbKill";
             this.BtnAdbKill.UseVisualStyleBackColor = true;
             this.BtnAdbKill.Click += new System.EventHandler(this.BtnAdbKill_Click);
             // 
-            // LinkLabelGitHub
+            // BtnAbout
             // 
-            resources.ApplyResources(this.LinkLabelGitHub, "LinkLabelGitHub");
-            this.LinkLabelGitHub.Name = "LinkLabelGitHub";
-            this.LinkLabelGitHub.TabStop = true;
-            this.LinkLabelGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelGitHub_LinkClicked);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // linkLabel1
-            // 
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            resources.ApplyResources(this.BtnAbout, "BtnAbout");
+            this.BtnAbout.Name = "BtnAbout";
+            this.BtnAbout.UseVisualStyleBackColor = true;
+            this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
             // 
             // FrmMain
             // 
             this.AcceptButton = this.BtnTakeMeToChurch;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.LinkLabelGitHub);
+            this.Controls.Add(this.BtnAbout);
             this.Controls.Add(this.BtnAdbKill);
             this.Controls.Add(this.BtnTakeMeToChurch);
             this.Controls.Add(this.ChkCustomPath);
@@ -235,6 +221,7 @@
             this.Controls.Add(this.GbAdb);
             this.Controls.Add(this.GbCustomDevice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.MaximizeBox = false;
             this.Name = "FrmMain";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
@@ -273,9 +260,7 @@
         private System.Windows.Forms.TextBox TxtScreenPath;
         private System.Windows.Forms.Label LblScreenFilename;
         private System.Windows.Forms.Button BtnAdbKill;
-        private System.Windows.Forms.LinkLabel LinkLabelGitHub;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button BtnAbout;
     }
 }
 

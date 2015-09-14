@@ -16,5 +16,9 @@ namespace Screenshoter.UI
         {
             InitializeComponent();
         }
+
+        private void FrmMit_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

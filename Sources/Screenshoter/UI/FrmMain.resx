@@ -122,7 +122,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TxtScreenPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 20</value>
+    <value>332, 20</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtnAdbKill.TabIndex" type="System.Int32, mscorlib">
@@ -131,14 +131,11 @@
   <data name="BtnCustomPath.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;ChkCustomDevice.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;TxtCustomDevicePort.Parent" xml:space="preserve">
-    <value>GbCustomDevice</value>
+  <data name="LblScreenFilename.Text" xml:space="preserve">
+    <value>File name (without .png, .jpg, etc.):</value>
   </data>
   <data name="TxtScreenPath.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -150,10 +147,10 @@
     <value>TxtAdbPath</value>
   </data>
   <data name="BtnCustomPath.Text" xml:space="preserve">
-    <value>Обзор</value>
+    <value>Browse</value>
   </data>
   <data name="&gt;&gt;GbAdb.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;BtnCustomDeviceSelect.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -163,7 +160,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;BtnAdbKill.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="BtnCustomDeviceSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -183,8 +180,8 @@
   <data name="TxtScreenPath.Text" xml:space="preserve">
     <value>/sdcard/</value>
   </data>
-  <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
-    <value>linkLabel1</value>
+  <data name="&gt;&gt;GbCustomDevice.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;IpCustomDeviceIp.Parent" xml:space="preserve">
     <value>GbCustomDevice</value>
@@ -192,20 +189,8 @@
   <data name="&gt;&gt;LblScreenFilename.Parent" xml:space="preserve">
     <value>GbAdb</value>
   </data>
-  <data name="&gt;&gt;GbCustomPath.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 13</value>
-  </data>
-  <data name="linkLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;ChkCustomDevice.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 297</value>
   </data>
   <data name="&gt;&gt;GbAdb.Name" xml:space="preserve">
     <value>GbAdb</value>
@@ -220,7 +205,10 @@
     <value>LblScreenPath</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Android ADB Screenshoter</value>
+    <value>Easy ADB Screenshoter</value>
+  </data>
+  <data name="TxtCustomDevicePort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;GbCustomPath.Parent" xml:space="preserve">
     <value>$this</value>
@@ -231,17 +219,14 @@
   <data name="LblScreenPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 46</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;LblScreenPath.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;ChkAdb.Parent" xml:space="preserve">
     <value>GbAdb</value>
   </data>
   <data name="ChkCustomPath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;LinkLabelGitHub.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BtnTakeMeToChurch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1381,17 +1366,14 @@
         //////////////////////////////////8=
 </value>
   </data>
-  <data name="LinkLabelGitHub.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 278</value>
-  </data>
   <data name="ChkCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 17</value>
+    <value>126, 17</value>
   </data>
   <data name="&gt;&gt;BtnTakeMeToChurch.Name" xml:space="preserve">
     <value>BtnTakeMeToChurch</value>
   </data>
-  <data name="LinkLabelGitHub.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="TxtScreenFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;BtnCustomPath.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1402,11 +1384,14 @@
   <data name="BtnCustomDeviceSelect.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="BtnTakeMeToChurch.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="BtnAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 124</value>
   </data>
   <data name="GbCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="TxtScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 20</value>
   </data>
   <data name="BtnCustomDeviceSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1414,23 +1399,26 @@
   <data name="GbAdb.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BtnAdbKill.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="ChkCustomDevice.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LblScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 13</value>
+    <value>169, 13</value>
   </data>
-  <data name="BtnCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;linkLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;TxtCustomPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TxtScreenFilename.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="BtnAdbPath.Text" xml:space="preserve">
+    <value>Browse</value>
   </data>
   <data name="&gt;&gt;TxtCustomPath.Parent" xml:space="preserve">
     <value>GbCustomPath</value>
@@ -1462,17 +1450,17 @@
   <data name="&gt;&gt;TxtCustomDevicePort.Name" xml:space="preserve">
     <value>TxtCustomDevicePort</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 278</value>
-  </data>
   <data name="LblScreenPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 13</value>
+    <value>220, 13</value>
   </data>
   <data name="TxtAdbPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="LblScreenPath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;BtnCustomDeviceSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmMain</value>
@@ -1499,13 +1487,7 @@
     <value>Adb not found!</value>
   </data>
   <data name="ChkCustomPath.Text" xml:space="preserve">
-    <value>Переместить сохраненные изображения:</value>
-  </data>
-  <data name="&gt;&gt;LinkLabelGitHub.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LinkLabelGitHub.Name" xml:space="preserve">
-    <value>LinkLabelGitHub</value>
+    <value>Save screenshots at:</value>
   </data>
   <data name="&gt;&gt;GbCustomDevice.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1520,22 +1502,22 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;IpCustomDeviceIp.Type" xml:space="preserve">
-    <value>IPAddressControlLib.IPAddressControl, IPAddressControlLib, Version=1.2.5721.21317, Culture=neutral, PublicKeyToken=7052a5c2c6d6e1fc</value>
+    <value>IPAddressControlLib.IPAddressControl, IPAddressControlLib, Version=1.2.5735.27001, Culture=neutral, PublicKeyToken=7052a5c2c6d6e1fc</value>
   </data>
   <data name="TxtCustomPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="BtnAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;ChkCustomDevice.Name" xml:space="preserve">
-    <value>ChkCustomDevice</value>
+  <data name="BtnAbout.Text" xml:space="preserve">
+    <value>About</value>
   </data>
-  <data name="TxtScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 20</value>
-  </data>
-  <data name="&gt;&gt;LblScreenPath.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="GbCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 58</value>
   </data>
   <data name="BtnCustomDeviceSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>379, 21</value>
@@ -1549,17 +1531,11 @@
   <data name="TxtScreenFilename.Text" xml:space="preserve">
     <value>screenshot</value>
   </data>
-  <data name="&gt;&gt;GbAdb.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;TxtCustomDevicePort.Parent" xml:space="preserve">
+    <value>GbCustomDevice</value>
   </data>
   <data name="&gt;&gt;TxtScreenPath.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;linkLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 278</value>
   </data>
   <data name="&gt;&gt;ChkCustomPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1582,14 +1558,20 @@
   <data name="LblScreenFilename.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="TxtCustomPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="TxtAdbPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 20</value>
+    <value>251, 20</value>
   </data>
   <data name="GbAdb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="BtnTakeMeToChurch.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BtnAdbKill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 6</value>
   </data>
   <data name="TxtCustomPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 20</value>
@@ -1601,7 +1583,7 @@
     <value>IpCustomDeviceIp</value>
   </data>
   <data name="BtnCustomDeviceSelect.Text" xml:space="preserve">
-    <value>Устройства</value>
+    <value>Devices</value>
   </data>
   <data name="&gt;&gt;BtnTakeMeToChurch.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1609,32 +1591,26 @@
   <data name="&gt;&gt;GbCustomPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;TxtAdbPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BtnAbout.Name" xml:space="preserve">
+    <value>BtnAbout</value>
   </data>
   <data name="BtnTakeMeToChurch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 17</value>
+    <value>362, 17</value>
   </data>
   <data name="&gt;&gt;ChkCustomPath.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="GbCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
     <value>460, 58</value>
   </data>
+  <data name="&gt;&gt;GbAdb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="ChkCustomDevice.Text" xml:space="preserve">
-    <value>Подключаться к выбранному устройству (через IP:Порт):</value>
+    <value>Connect to custom device (via IP:Port):</value>
   </data>
   <data name="IpCustomDeviceIp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
-  </data>
-  <data name="TxtAdbPath.Text" xml:space="preserve">
-    <value>adb.exe</value>
-  </data>
-  <data name="ChkCustomDevice.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;ChkCustomPath.Name" xml:space="preserve">
     <value>ChkCustomPath</value>
@@ -1651,29 +1627,14 @@
   <data name="&gt;&gt;BtnAdbKill.Name" xml:space="preserve">
     <value>BtnAdbKill</value>
   </data>
-  <data name="BtnAdbKill.Text" xml:space="preserve">
-    <value>ADB Kill</value>
-  </data>
   <data name="&gt;&gt;LblScreenFilename.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="LinkLabelGitHub.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LinkLabelGitHub.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
-  </data>
-  <data name="LblScreenFilename.Text" xml:space="preserve">
-    <value>Имя файла (без расширения .png, .jpg, и т.д.):</value>
   </data>
   <data name="&gt;&gt;LblScreenFilename.Name" xml:space="preserve">
     <value>LblScreenFilename</value>
   </data>
   <data name="&gt;&gt;TxtScreenPath.Parent" xml:space="preserve">
     <value>GbAdb</value>
-  </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>MIT</value>
   </data>
   <data name="BtnAdbPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -1682,10 +1643,7 @@
     <value>6, 101</value>
   </data>
   <data name="ChkCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 17</value>
-  </data>
-  <data name="LinkLabelGitHub.Text" xml:space="preserve">
-    <value>GitHub</value>
+    <value>211, 17</value>
   </data>
   <data name="&gt;&gt;TxtCustomDevicePort.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1881,19 +1839,19 @@
     <value>BtnCustomDeviceSelect</value>
   </data>
   <data name="LblScreenPath.Text" xml:space="preserve">
-    <value>Где хранить скриншоты (на устройстве):</value>
+    <value>Temporary folder on device (for screenshots):</value>
   </data>
   <data name="&gt;&gt;BtnAdbPath.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;GbCustomDevice.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="BtnCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="notifyIcon.Text" xml:space="preserve">
     <value>notifyIcon1</value>
   </data>
-  <data name="&gt;&gt;BtnCustomDeviceSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ChkCustomDevice.Name" xml:space="preserve">
+    <value>ChkCustomDevice</value>
   </data>
   <data name="TxtCustomDevicePort.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1901,14 +1859,14 @@
   <data name="&gt;&gt;IpCustomDeviceIp.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="TxtScreenFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="BtnAdbKill.Text" xml:space="preserve">
+    <value>   ADB Kill</value>
   </data>
   <data name="&gt;&gt;TxtScreenFilename.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;BtnTakeMeToChurch.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;TxtScreenFilename.Parent" xml:space="preserve">
     <value>GbAdb</value>
@@ -1919,14 +1877,8 @@
   <data name="&gt;&gt;BtnAdbPath.Name" xml:space="preserve">
     <value>BtnAdbPath</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>This program is free software and publishing under            license.</value>
-  </data>
   <data name="&gt;&gt;ChkAdb.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 13</value>
   </data>
   <data name="ChkAdb.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 17</value>
@@ -1937,32 +1889,35 @@
   <data name="&gt;&gt;BtnTakeMeToChurch.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LinkLabelGitHub.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;BtnCustomPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="IpCustomDeviceIp.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>87, 20</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="ChkCustomDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;BtnCustomPath.Parent" xml:space="preserve">
     <value>GbCustomPath</value>
   </data>
-  <data name="BtnAdbKill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 6</value>
+  <data name="&gt;&gt;GbCustomPath.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="GbCustomPath.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="BtnAdbPath.Text" xml:space="preserve">
-    <value>Обзор</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>484, 291</value>
+  </data>
+  <data name="&gt;&gt;BtnAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GbCustomDevice.Name" xml:space="preserve">
     <value>GbCustomDevice</value>
+  </data>
+  <data name="&gt;&gt;BtnAbout.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="TxtScreenFilename.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1973,35 +1928,26 @@
   <data name="&gt;&gt;GbCustomPath.Name" xml:space="preserve">
     <value>GbCustomPath</value>
   </data>
-  <data name="&gt;&gt;linkLabel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TxtCustomDevicePort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="TxtAdbPath.Text" xml:space="preserve">
+    <value>adb.exe</value>
   </data>
   <data name="BtnTakeMeToChurch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 130</value>
+    <value>110, 101</value>
   </data>
   <data name="LblScreenFilename.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 85</value>
   </data>
-  <data name="GbCustomPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 58</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;TxtCustomPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TxtCustomPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="ChkCustomPath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;TxtAdbPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="BtnAdbPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 21</value>
+    <value>263, 21</value>
   </data>
   <data name="GbCustomDevice.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2013,7 +1959,7 @@
     <value>$this</value>
   </data>
   <data name="GbAdb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 134</value>
+    <value>344, 134</value>
   </data>
   <data name="IpCustomDeviceIp.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2030,11 +1976,11 @@
   <data name="TxtCustomPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 23</value>
   </data>
+  <data name="&gt;&gt;BtnAbout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="TxtScreenPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 62</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

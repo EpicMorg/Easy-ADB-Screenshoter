@@ -53,6 +53,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FrmAdb.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Locale\Strings.ru.resx" />
+    <EmbeddedResource Include="UI\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmAdb.resx">
       <DependentUpon>FrmAdb.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\github_alt.png" />
+    <None Include="Resources\license_manager.png" />
+    <None Include="Resources\google_android_download.png" />
+    <None Include="Resources\16-em-cross_9024.png" />
     <None Include="Resources\Windows_Error8.wav" />
     <None Include="Resources\photo.png" />
     <None Include="Resources\screenshot.png" />

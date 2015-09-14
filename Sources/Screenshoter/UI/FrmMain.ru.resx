@@ -118,6 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LblScreenFilename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 13</value>
+  </data>
+  <data name="LblScreenFilename.Text" xml:space="preserve">
+    <value>Имя файла (без .png, .jpg, и т.д.):</value>
+  </data>
+  <data name="LblScreenPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 13</value>
+  </data>
+  <data name="LblScreenPath.Text" xml:space="preserve">
+    <value>Папка временного хранения скриншотов на устройстве:</value>
+  </data>
+  <data name="BtnAdbPath.Text" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
+  <data name="BtnCustomDeviceSelect.Text" xml:space="preserve">
+    <value>Устройства</value>
+  </data>
+  <data name="ChkCustomDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 17</value>
+  </data>
+  <data name="ChkCustomDevice.Text" xml:space="preserve">
+    <value>Подключиться по сети (через IP:Порт):</value>
+  </data>
+  <data name="ChkCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 17</value>
+  </data>
+  <data name="ChkCustomPath.Text" xml:space="preserve">
+    <value>Сохранять скриншоты в эту папку:</value>
+  </data>
+  <data name="BtnCustomPath.Text" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
   <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAABILAAASCwAAAAAAAAAA
@@ -284,14 +317,8 @@
         AAA=
 </value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 13</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Приложение является бесплатным и распрастраняется по лицензии</value>
-  </data>
-  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 278</value>
+  <data name="BtnAbout.Text" xml:space="preserve">
+    <value>О программе</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

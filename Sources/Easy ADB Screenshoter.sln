@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPAddressControlLib", "IPAddressControlLib\IPAddressControlLib.csproj", "{A5ED2B33-5644-47C4-BC30-A4840F67FF87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Android ADB Screenshoter", "Screenshoter\Android ADB Screenshoter.csproj", "{FE5EC074-207B-4809-BC39-5A4AE7667AF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy ADB Screenshoter", "Screenshoter\Easy ADB Screenshoter.csproj", "{FE5EC074-207B-4809-BC39-5A4AE7667AF3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3d party", "3d party", "{E7AD8F18-E2C6-4A9E-BE16-5979472F0CEC}"
 EndProject

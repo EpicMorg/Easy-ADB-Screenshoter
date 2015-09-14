@@ -14,6 +14,8 @@ namespace Screenshoter.UI
         private string _adbPath;
         private FormWindowState _oldFormState;
         private bool _adbStatus = false;
+        private bool _terminatingWithoutAdb = false;
+        int _developer = 0;
 
         public FrmMain()
         {
@@ -62,7 +64,17 @@ namespace Screenshoter.UI
                 }
                 else
                 {
-                    AdbCheck();
+
+                    if (MessageBox.Show(new Form() { TopMost = true }, Strings.WarnAdbPathIsNull, Strings.Warn, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    {
+                        AdbCheck();
+                    }
+                    else
+                    {
+                        Visible = false;
+                        notifyIcon.BalloonTipIcon = ToolTipIcon.None;
+                        Application.Exit();
+                    }
                 }
             }
             else
@@ -272,7 +284,10 @@ namespace Screenshoter.UI
         #region UI Magic
         private void ChkAdb_CheckedChanged(object sender, EventArgs e)
         {
+           
             ChkAdb.Checked = true;
+           
+           
         }
 
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -351,34 +366,80 @@ namespace Screenshoter.UI
                 }
                 catch (Exception ex1)
                 {
-                    MessageBox.Show(ex1.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                   
+                        MessageBox.Show(ex1.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                 
                 }
-            }
+        }
             else
             {
+                if (_terminatingWithoutAdb == false){
                 MessageBox.Show(Strings.AdbServerNotStopped, Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
         }
 
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
+            _terminatingWithoutAdb = true;
+            notifyIcon.BalloonTipIcon = ToolTipIcon.None;
             AdbKiller();
         }
 
         private void BtnAdbKill_Click(object sender, EventArgs e)
         {
+            _terminatingWithoutAdb = false;
             AdbKiller();
         }
 
-        private void LinkLabelGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void ChkAdb_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/stamepicmorg/Android-ADB-Screenshoter");
+            notifyIcon.Visible = false;
+            _developer = _developer + 1;
+            if (_developer == 7)
+            {
+                notifyIcon.Visible = true;
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText = Strings.EasterEgg1 + @" (3).";
+                notifyIcon.ShowBalloonTip(500);
+
+            }
+            if (_developer == 8)
+            {
+                notifyIcon.Visible = true;
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText = Strings.EasterEgg1 + @" (2).";
+                notifyIcon.ShowBalloonTip(500);
+            }
+            if (_developer == 9)
+            {
+                notifyIcon.Visible = true;
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText = Strings.EasterEgg1 + @" (1).";
+                notifyIcon.ShowBalloonTip(500);
+            }
+            if (_developer == 10)
+            {
+                notifyIcon.Visible = true;
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText = Strings.EasterEgg2;
+                notifyIcon.ShowBalloonTip(500);
+            }
+            if (_developer > 10)
+            {
+                notifyIcon.Visible = true;
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText = Strings.EasterEgg3;
+                notifyIcon.ShowBalloonTip(500);
+            }
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void BtnAbout_Click(object sender, EventArgs e)
         {
-            var frmmit = new FrmMit();
-            frmmit.ShowDialog();
+            var frmabt = new FrmAbout();
+            frmabt.ShowDialog();
         }
+
     }
 }

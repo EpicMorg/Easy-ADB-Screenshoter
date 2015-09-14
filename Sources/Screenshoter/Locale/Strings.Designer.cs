@@ -106,6 +106,33 @@ namespace Screenshoter.Locale {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на You&apos;re almost there. Only a few steps.
+        /// </summary>
+        internal static string EasterEgg1 {
+            get {
+                return ResourceManager.GetString("EasterEgg1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You are now a developer!.
+        /// </summary>
+        internal static string EasterEgg2 {
+            get {
+                return ResourceManager.GetString("EasterEgg2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на No need, you are already a developer..
+        /// </summary>
+        internal static string EasterEgg3 {
+            get {
+                return ResourceManager.GetString("EasterEgg3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Error.
         /// </summary>
         internal static string Error {
@@ -156,6 +183,24 @@ namespace Screenshoter.Locale {
         internal static string ScreenshotDone {
             get {
                 return ResourceManager.GetString("ScreenshotDone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Warning!.
+        /// </summary>
+        internal static string Warn {
+            get {
+                return ResourceManager.GetString("Warn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You have not specified the path to Adb.exe. Want to try again?.
+        /// </summary>
+        internal static string WarnAdbPathIsNull {
+            get {
+                return ResourceManager.GetString("WarnAdbPathIsNull", resourceCulture);
             }
         }
     }
