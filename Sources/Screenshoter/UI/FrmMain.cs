@@ -25,6 +25,7 @@ namespace Screenshoter.UI
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            notifyIcon.BalloonTipTitle = Text; 
             notifyIcon.Text = Text;
             notifyIcon.MouseClick += notifyIcon_MouseClick;
             Resize += FormForTray_Resize;
@@ -56,8 +57,7 @@ namespace Screenshoter.UI
                     TxtAdbPath.Text = openFileDialog.FileName;
                     ChkAdb.Checked = true;
                     ChkAdb.Text = Strings.AdbFound;
-                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
-                    notifyIcon.BalloonTipTitle = Text;
+                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info; 
                     notifyIcon.BalloonTipText =
                         Strings.PreparedToWork;
                     notifyIcon.ShowBalloonTip(30000);
@@ -80,6 +80,11 @@ namespace Screenshoter.UI
             else
             { 
                 TxtAdbPath.Text = Path.Combine(Application.StartupPath, "adb.exe");
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText =
+                    Strings.PreparedToWork;
+
+                notifyIcon.ShowBalloonTip(30000);
                 ChkAdb.Checked = true;
                 ChkAdb.Text = Strings.AdbFound; 
             }
@@ -258,8 +263,7 @@ namespace Screenshoter.UI
             }
             notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
             notifyIcon.BalloonTipTitle = Text;
-            notifyIcon.BalloonTipText = Strings.ScreenshotDone;
-                ;
+            notifyIcon.BalloonTipText = Strings.ScreenshotDone; 
             notifyIcon.ShowBalloonTip(10000);
             var str = Properties.Resources.Windows_Error8;
             var snd = new SoundPlayer(str);
