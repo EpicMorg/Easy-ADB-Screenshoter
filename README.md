@@ -1,5 +1,6 @@
 Easy ADB Screenshoter
 ====================
+![screenshot](http://i.imgur.com/WNHAzsX.png)
 
 Simple GUI for adb.exe for taking screenshots.
 
