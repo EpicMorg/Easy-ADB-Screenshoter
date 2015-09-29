@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
 [assembly: AssemblyTitle("Easy ADB Screenshoter")]
-[assembly: AssemblyDescription("EasyADB Screenshoter")]
+[assembly: AssemblyDescription("Easy ADB Screenshoter")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EpicMorg")]
-[assembly: AssemblyProduct("EasyADB Screenshoter")]
+[assembly: AssemblyProduct("Easy ADB Screenshoter")]
 [assembly: AssemblyCopyright("Copyright © EpicMorg 2015")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("EpicMorg")]
 [assembly: AssemblyCulture("")]
 
 // Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
@@ -31,6 +31,6 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.5")]
-[assembly: AssemblyFileVersion("1.0.0.5")]
-[assembly: AssemblyInformationalVersion("1.0.0.4")]
+[assembly: AssemblyVersion("1.0.0.6")]
+[assembly: AssemblyFileVersion("1.0.0.6")]
+[assembly: AssemblyInformationalVersion("1.0.0.6")]

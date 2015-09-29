@@ -97,6 +97,25 @@ namespace Screenshoter.Locale {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Waiting for device connection.
+        ///Please wait....
+        /// </summary>
+        internal static string DevWa1 {
+            get {
+                return ResourceManager.GetString("DevWa1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на If you see this message more than five minutes, check the connection of your device to the computer and restart the program..
+        /// </summary>
+        internal static string DevWa2 {
+            get {
+                return ResourceManager.GetString("DevWa2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Done.
         /// </summary>
         internal static string Done {

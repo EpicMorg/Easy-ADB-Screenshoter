@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\swbiJEannvU.jpg" />
     <None Include="Resources\github_alt.png" />
     <None Include="Resources\license_manager.png" />
     <None Include="Resources\google_android_download.png" />

@@ -39,21 +39,26 @@
             this.TxtAdbPath = new System.Windows.Forms.TextBox();
             this.ChkAdb = new System.Windows.Forms.CheckBox();
             this.GbCustomDevice = new System.Windows.Forms.GroupBox();
-            this.BtnCustomDeviceSelect = new System.Windows.Forms.Button();
-            this.IpCustomDeviceIp = new IPAddressControlLib.IPAddressControl();
             this.TxtCustomDevicePort = new System.Windows.Forms.TextBox();
             this.ChkCustomDevice = new System.Windows.Forms.CheckBox();
-            this.ChkCustomPath = new System.Windows.Forms.CheckBox();
+            this.IpCustomDeviceIp = new IPAddressControlLib.IPAddressControl();
+            this.BtnCustomDeviceSelect = new System.Windows.Forms.Button();
             this.GbCustomPath = new System.Windows.Forms.GroupBox();
-            this.BtnCustomPath = new System.Windows.Forms.Button();
+            this.ChkCustomPath = new System.Windows.Forms.CheckBox();
             this.TxtCustomPath = new System.Windows.Forms.TextBox();
+            this.BtnCustomPath = new System.Windows.Forms.Button();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.BtnTakeMeToChurch = new System.Windows.Forms.Button();
             this.BtnAdbKill = new System.Windows.Forms.Button();
             this.BtnAbout = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_wait_for_device = new System.Windows.Forms.Panel();
+            this.labelWait2 = new System.Windows.Forms.Label();
+            this.labelWaitingForDevice = new System.Windows.Forms.Label();
             this.GbAdb.SuspendLayout();
             this.GbCustomDevice.SuspendLayout();
             this.GbCustomPath.SuspendLayout();
+            this.panel_wait_for_device.SuspendLayout();
             this.SuspendLayout();
             // 
             // GbAdb
@@ -120,24 +125,6 @@
             this.GbCustomDevice.Name = "GbCustomDevice";
             this.GbCustomDevice.TabStop = false;
             // 
-            // BtnCustomDeviceSelect
-            // 
-            resources.ApplyResources(this.BtnCustomDeviceSelect, "BtnCustomDeviceSelect");
-            this.BtnCustomDeviceSelect.Name = "BtnCustomDeviceSelect";
-            this.BtnCustomDeviceSelect.UseVisualStyleBackColor = true;
-            this.BtnCustomDeviceSelect.Click += new System.EventHandler(this.BtnCustomDeviceSelect_Click);
-            // 
-            // IpCustomDeviceIp
-            // 
-            resources.ApplyResources(this.IpCustomDeviceIp, "IpCustomDeviceIp");
-            this.IpCustomDeviceIp.AllowInternalTab = false;
-            this.IpCustomDeviceIp.AutoHeight = true;
-            this.IpCustomDeviceIp.BackColor = System.Drawing.SystemColors.Window;
-            this.IpCustomDeviceIp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.IpCustomDeviceIp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.IpCustomDeviceIp.Name = "IpCustomDeviceIp";
-            this.IpCustomDeviceIp.ReadOnly = false;
-            // 
             // TxtCustomDevicePort
             // 
             resources.ApplyResources(this.TxtCustomDevicePort, "TxtCustomDevicePort");
@@ -150,12 +137,23 @@
             this.ChkCustomDevice.UseVisualStyleBackColor = true;
             this.ChkCustomDevice.CheckedChanged += new System.EventHandler(this.ChkCustomDevice_CheckedChanged);
             // 
-            // ChkCustomPath
+            // IpCustomDeviceIp
             // 
-            resources.ApplyResources(this.ChkCustomPath, "ChkCustomPath");
-            this.ChkCustomPath.Name = "ChkCustomPath";
-            this.ChkCustomPath.UseVisualStyleBackColor = true;
-            this.ChkCustomPath.CheckedChanged += new System.EventHandler(this.ChkCustomPath_CheckedChanged);
+            this.IpCustomDeviceIp.AllowInternalTab = false;
+            resources.ApplyResources(this.IpCustomDeviceIp, "IpCustomDeviceIp");
+            this.IpCustomDeviceIp.AutoHeight = true;
+            this.IpCustomDeviceIp.BackColor = System.Drawing.SystemColors.Window;
+            this.IpCustomDeviceIp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.IpCustomDeviceIp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IpCustomDeviceIp.Name = "IpCustomDeviceIp";
+            this.IpCustomDeviceIp.ReadOnly = false;
+            // 
+            // BtnCustomDeviceSelect
+            // 
+            resources.ApplyResources(this.BtnCustomDeviceSelect, "BtnCustomDeviceSelect");
+            this.BtnCustomDeviceSelect.Name = "BtnCustomDeviceSelect";
+            this.BtnCustomDeviceSelect.UseVisualStyleBackColor = true;
+            this.BtnCustomDeviceSelect.Click += new System.EventHandler(this.BtnCustomDeviceSelect_Click);
             // 
             // GbCustomPath
             // 
@@ -165,18 +163,25 @@
             this.GbCustomPath.Name = "GbCustomPath";
             this.GbCustomPath.TabStop = false;
             // 
-            // BtnCustomPath
+            // ChkCustomPath
             // 
-            resources.ApplyResources(this.BtnCustomPath, "BtnCustomPath");
-            this.BtnCustomPath.Name = "BtnCustomPath";
-            this.BtnCustomPath.UseVisualStyleBackColor = true;
-            this.BtnCustomPath.Click += new System.EventHandler(this.BtnCustomPath_Click);
+            resources.ApplyResources(this.ChkCustomPath, "ChkCustomPath");
+            this.ChkCustomPath.Name = "ChkCustomPath";
+            this.ChkCustomPath.UseVisualStyleBackColor = true;
+            this.ChkCustomPath.CheckedChanged += new System.EventHandler(this.ChkCustomPath_CheckedChanged);
             // 
             // TxtCustomPath
             // 
             resources.ApplyResources(this.TxtCustomPath, "TxtCustomPath");
             this.TxtCustomPath.Name = "TxtCustomPath";
             this.TxtCustomPath.ReadOnly = true;
+            // 
+            // BtnCustomPath
+            // 
+            resources.ApplyResources(this.BtnCustomPath, "BtnCustomPath");
+            this.BtnCustomPath.Name = "BtnCustomPath";
+            this.BtnCustomPath.UseVisualStyleBackColor = true;
+            this.BtnCustomPath.Click += new System.EventHandler(this.BtnCustomPath_Click);
             // 
             // notifyIcon
             // 
@@ -194,8 +199,8 @@
             // 
             // BtnAdbKill
             // 
-            resources.ApplyResources(this.BtnAdbKill, "BtnAdbKill");
             this.BtnAdbKill.Image = global::Screenshoter.Properties.Resources.cross;
+            resources.ApplyResources(this.BtnAdbKill, "BtnAdbKill");
             this.BtnAdbKill.Name = "BtnAdbKill";
             this.BtnAdbKill.UseVisualStyleBackColor = true;
             this.BtnAdbKill.Click += new System.EventHandler(this.BtnAdbKill_Click);
@@ -207,11 +212,44 @@
             this.BtnAbout.UseVisualStyleBackColor = true;
             this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
             // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // panel_wait_for_device
+            // 
+            this.panel_wait_for_device.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel_wait_for_device.BackgroundImage = global::Screenshoter.Properties.Resources.swbiJEannvU;
+            resources.ApplyResources(this.panel_wait_for_device, "panel_wait_for_device");
+            this.panel_wait_for_device.Controls.Add(this.labelWait2);
+            this.panel_wait_for_device.Controls.Add(this.labelWaitingForDevice);
+            this.panel_wait_for_device.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel_wait_for_device.Name = "panel_wait_for_device";
+            this.panel_wait_for_device.UseWaitCursor = true;
+            // 
+            // labelWait2
+            // 
+            this.labelWait2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.labelWait2, "labelWait2");
+            this.labelWait2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelWait2.Name = "labelWait2";
+            this.labelWait2.UseWaitCursor = true;
+            // 
+            // labelWaitingForDevice
+            // 
+            this.labelWaitingForDevice.BackColor = System.Drawing.Color.Transparent;
+            this.labelWaitingForDevice.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            resources.ApplyResources(this.labelWaitingForDevice, "labelWaitingForDevice");
+            this.labelWaitingForDevice.Name = "labelWaitingForDevice";
+            this.labelWaitingForDevice.UseWaitCursor = true;
+            // 
             // FrmMain
             // 
             this.AcceptButton = this.BtnTakeMeToChurch;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel_wait_for_device);
             this.Controls.Add(this.BtnAbout);
             this.Controls.Add(this.BtnAdbKill);
             this.Controls.Add(this.BtnTakeMeToChurch);
@@ -220,6 +258,8 @@
             this.Controls.Add(this.ChkCustomDevice);
             this.Controls.Add(this.GbAdb);
             this.Controls.Add(this.GbCustomDevice);
+            this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.MaximizeBox = false;
@@ -233,6 +273,7 @@
             this.GbCustomDevice.PerformLayout();
             this.GbCustomPath.ResumeLayout(false);
             this.GbCustomPath.PerformLayout();
+            this.panel_wait_for_device.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,25 +283,29 @@
 
         private System.Windows.Forms.GroupBox GbAdb;
         private System.Windows.Forms.CheckBox ChkAdb;
-        private IPAddressControlLib.IPAddressControl IpCustomDeviceIp;
         private System.Windows.Forms.Button BtnAdbPath;
         private System.Windows.Forms.TextBox TxtAdbPath;
-        private System.Windows.Forms.GroupBox GbCustomDevice;
-        private System.Windows.Forms.Button BtnCustomDeviceSelect;
-        private System.Windows.Forms.TextBox TxtCustomDevicePort;
-        private System.Windows.Forms.CheckBox ChkCustomDevice;
-        private System.Windows.Forms.CheckBox ChkCustomPath;
-        private System.Windows.Forms.GroupBox GbCustomPath;
-        private System.Windows.Forms.Button BtnCustomPath;
-        private System.Windows.Forms.TextBox TxtCustomPath;
-        private System.Windows.Forms.Button BtnTakeMeToChurch;
-        private System.Windows.Forms.NotifyIcon notifyIcon;
         private System.Windows.Forms.Label LblScreenPath;
         private System.Windows.Forms.TextBox TxtScreenFilename;
         private System.Windows.Forms.TextBox TxtScreenPath;
         private System.Windows.Forms.Label LblScreenFilename;
+        private System.Windows.Forms.GroupBox GbCustomDevice;
+        private System.Windows.Forms.Button BtnCustomDeviceSelect;
+        private IPAddressControlLib.IPAddressControl IpCustomDeviceIp;
+        private System.Windows.Forms.TextBox TxtCustomDevicePort;
+        private System.Windows.Forms.CheckBox ChkCustomDevice;
+        private System.Windows.Forms.GroupBox GbCustomPath;
+        private System.Windows.Forms.Button BtnCustomPath;
+        private System.Windows.Forms.TextBox TxtCustomPath;
+        private System.Windows.Forms.CheckBox ChkCustomPath;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.Button BtnTakeMeToChurch;
         private System.Windows.Forms.Button BtnAdbKill;
         private System.Windows.Forms.Button BtnAbout;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_wait_for_device;
+        private System.Windows.Forms.Label labelWait2;
+        private System.Windows.Forms.Label labelWaitingForDevice;
     }
 }
 

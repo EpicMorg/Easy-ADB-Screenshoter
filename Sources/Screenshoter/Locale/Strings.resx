@@ -129,6 +129,13 @@
   <data name="AdbServerStopped" xml:space="preserve">
     <value>Adb Server stopped successfully!</value>
   </data>
+  <data name="DevWa1" xml:space="preserve">
+    <value>Waiting for device connection.
+Please wait...</value>
+  </data>
+  <data name="DevWa2" xml:space="preserve">
+    <value>If you see this message more than five minutes, check the connection of your device to the computer and restart the program.</value>
+  </data>
   <data name="Done" xml:space="preserve">
     <value>Done</value>
   </data>

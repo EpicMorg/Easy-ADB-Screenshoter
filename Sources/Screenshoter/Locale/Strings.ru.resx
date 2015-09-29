@@ -129,6 +129,13 @@
   <data name="AdbServerStopped" xml:space="preserve">
     <value>Adb Server успешно остановлен!</value>
   </data>
+  <data name="DevWa1" xml:space="preserve">
+    <value>Ожидание подключения устройства.
+Пожалуйста, подождите...</value>
+  </data>
+  <data name="DevWa2" xml:space="preserve">
+    <value>Если вы наблюдаете это сообщение более пяти минут, проверьте подключение вашего устройства к компьютеру и перезапустите программу.</value>
+  </data>
   <data name="Done" xml:space="preserve">
     <value>Выполнено</value>
   </data>

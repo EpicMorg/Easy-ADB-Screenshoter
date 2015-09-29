@@ -11,10 +11,12 @@ namespace Screenshoter.UI
 {
     public sealed partial class FrmMain : Form
     {
+      
         private string _adbPath;
         private FormWindowState _oldFormState;
         private bool _adbStatus = false;
         private bool _terminatingWithoutAdb = false;
+        private bool _allright = false;
         int _developer = 0;
 
         public FrmMain()
@@ -25,6 +27,9 @@ namespace Screenshoter.UI
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            labelWaitingForDevice.Text = Strings.DevWa1;
+            labelWait2.Text = Strings.DevWa2;
+            panel_wait_for_device.Visible = false;
             notifyIcon.BalloonTipTitle = Text; 
             notifyIcon.Text = Text;
             notifyIcon.MouseClick += notifyIcon_MouseClick;
@@ -90,6 +95,7 @@ namespace Screenshoter.UI
             }
         }
 
+    
 
         private void BtnCustomDeviceSelect_Click(object sender, EventArgs e)
         { 
@@ -116,8 +122,11 @@ namespace Screenshoter.UI
             ChkAdb.Text = Strings.AdbFound;
         }
 
+        
+
         private void BtnTakeMeToChurch_Click(object sender, EventArgs e)
         {
+           
             _adbStatus = true;
             BtnTakeMeToChurch.Enabled = false;
             _adbPath = TxtAdbPath.Text;
@@ -132,10 +141,26 @@ namespace Screenshoter.UI
             {
                 if (!string.IsNullOrWhiteSpace(ip) && !string.IsNullOrWhiteSpace(port))
                 {
+                    _allright = false; 
                     // adb connect [host:port]
-
                     try
                     {
+                        var pasd = new Process
+                        {
+                            StartInfo =
+                            {
+                                FileName = _adbPath,
+                                Arguments = "wait-for-device",
+                                UseShellExecute = false,
+                                RedirectStandardOutput = true,
+                                CreateNoWindow = true,
+                                StandardOutputEncoding = Encoding.GetEncoding(866)
+                            }
+                        };
+                        pasd.Start();
+                        panel_wait_for_device.Visible = true;
+                        pasd.WaitForExit();
+                        panel_wait_for_device.Visible = false;
                         var p0 = new Process
                         {
                             StartInfo =
@@ -150,25 +175,46 @@ namespace Screenshoter.UI
                         };
                         p0.Start();
                         p0.WaitForExit();
-                       
+                        _allright = true;
+
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
                         BtnTakeMeToChurch.Enabled = true;
+                        _allright = false;
                     }
                 }
                 else
                 {
                     MessageBox.Show(Strings.ErrorIpPort, Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     BtnTakeMeToChurch.Enabled = true;
+                    _allright = false;
                     return;
                 }
             }
             //adb shell screencap -p / sdcard / screenshot_%random%.png
             //MessageBox.Show(_adbPath + " shell screencap -p " + path + screenshot + "_" + addToName + ".png");
+            
             try
             {
+                _allright = false;
+                var pasd = new Process
+                {
+                    StartInfo =
+                    {
+                        FileName = _adbPath,
+                        Arguments = "wait-for-device",
+                        UseShellExecute = false,
+                        RedirectStandardOutput = true,
+                        CreateNoWindow = true,
+                        StandardOutputEncoding = Encoding.GetEncoding(866)
+                    }
+                }; 
+                pasd.Start();
+                panel_wait_for_device.Visible = true;
+                pasd.WaitForExit();
+                panel_wait_for_device.Visible = false;
                 var p1 = new Process
                 {
                     StartInfo =
@@ -183,16 +229,19 @@ namespace Screenshoter.UI
                 };
                 p1.Start();
                 p1.WaitForExit();
+                _allright = true;
             }
             catch (Exception ex1)
             {
                 MessageBox.Show(ex1.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 BtnTakeMeToChurch.Enabled = true;
+                _allright = false;
             }
             //adb pull / sdcard / screenshot_%random%.png
             //MessageBox.Show(_adbPath + " pull " + path + screenshot + "_" + addToName + ".png");
             try
             {
+                _allright = false;
                 var p2 = new Process
                 {
                     StartInfo =
@@ -207,16 +256,19 @@ namespace Screenshoter.UI
                 };
                 p2.Start();
                 p2.WaitForExit();
+                _allright = true;
             }
             catch (Exception ex2)
             {
                 MessageBox.Show(ex2.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 BtnTakeMeToChurch.Enabled = true;
+                _allright = false;
             }
             //adb shell rm / sdcard / screen_10_ % _rand %.png
             //MessageBox.Show(_adbPath + " shell rm " + path + screenshot + "_" + addToName + ".png");
             try
             {
+                _allright = false;
                 var p3 = new Process
                 {
                     StartInfo =
@@ -231,11 +283,13 @@ namespace Screenshoter.UI
                 };
                 p3.Start();
                 p3.WaitForExit();
+                _allright = true;
             }
             catch (Exception ex3)
             {
                 MessageBox.Show(ex3.ToString(), Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 BtnTakeMeToChurch.Enabled = true;
+                _allright = false;
             }
             if (ChkCustomPath.Checked)
             {
@@ -244,15 +298,24 @@ namespace Screenshoter.UI
                     MessageBox.Show(Strings.ErrorSaving,
                         Strings.Error, MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
-                    BtnTakeMeToChurch.Enabled = true;
+                    BtnTakeMeToChurch.Enabled = true; 
                 }
                 else
                 {
+
                     //MessageBox.Show(Path.Combine(finalfilepath, screenshot + "_" + addToName + ".png"));
                     try
                     {
-                        File.Move(screenshot + "_" + addToName + ".png",
+                        if (!_allright)
+                        {
+                            MessageBox.Show(@"!_allright", Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                        else
+                        {
+                              File.Move(screenshot + "_" + addToName + ".png",
                             Path.Combine(finalfilepath, screenshot + "_" + addToName + ".png")); // Try to move
+                        }
+                      
                     }
                     catch (Exception ex)
                     {
